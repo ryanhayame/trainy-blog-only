@@ -2,6 +2,9 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayout'
 import { PageSEO } from '@/components/SEO'
+import SectionContainer from '@/components/SectionContainer'
+import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
 
 export const POSTS_PER_PAGE = 5
 
@@ -18,14 +21,16 @@ export async function getStaticProps() {
 
 export default function Blog({ posts, initialDisplayPosts, pagination }) {
   return (
-    <>
-      <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
-      <ListLayout
-        posts={posts}
-        initialDisplayPosts={initialDisplayPosts}
-        pagination={pagination}
-        title="All Posts"
-      />
-    </>
+    <main className="min-h-screen flex flex-col items-center">
+      <SectionContainer>
+        <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
+        <ListLayout
+          posts={posts}
+          initialDisplayPosts={initialDisplayPosts}
+          pagination={pagination}
+          title="All Posts"
+        />
+      </SectionContainer>
+    </main>
   )
 }
