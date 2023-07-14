@@ -14,7 +14,23 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    container: {
+      center: true,
+    },
+    minHeight: {
+      small: '50rem',
+    },
     extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      screens: {
+        xs: '400px',
+      },
+      boxShadow: {
+        innerDark: 'inset 0 2px 4px 0 rgb(0 0 0 / 0.1)',
+      },
       spacing: {
         '9/16': '56.25%',
       },
@@ -30,6 +46,10 @@ module.exports = {
       colors: {
         primary: colors.teal,
         gray: colors.neutral,
+        logodark: '#DD5141',
+        logolight: '#EFB357',
+        logomid: '#E6824C',
+        logolightest: '#f7d8a8',
       },
       typography: (theme) => ({
         DEFAULT: {
