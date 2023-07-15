@@ -20,10 +20,12 @@ const Nav = () => {
       >
         <div className="sm: sm: flex md:w-1/2 md:justify-center w-5/12 justify-start pl-2">
           <Link href="/" className="flex items-center">
-            <img src="/trainy-transparent.png" className="h-8 mr-1" alt="Trainy Logo" />
-            <span className="self-center text-2xl text-black font-bold whitespace-nowrap tracking-tighter">
-              Trainy
-            </span>
+            <>
+              <img src="/trainy-transparent.png" className="h-8 mr-1" alt="Trainy Logo" />
+              <span className="self-center text-2xl text-black font-bold whitespace-nowrap tracking-tighter">
+                Trainy
+              </span>
+            </>
           </Link>
           <div
             className="items-center justify-between hidden w-full md:flex md:w-auto ml-4 border-l"
