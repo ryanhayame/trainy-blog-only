@@ -31,7 +31,7 @@ const Nav = () => {
             className="items-center justify-between hidden w-full md:flex md:w-auto ml-4 border-l"
             id="navbar-sticky"
           >
-            <ul className="flex flex-col ml-2 p-4 md:p-0 mt-4 font-medium border border-white rounded-lg bg-white md:flex-row md:space-x-4 md:mt-0 md:border-0 md:bg-white ">
+            <ul className="flex flex-col ml-4 p-4 md:p-0 mt-4 font-medium border border-white rounded-lg bg-white md:flex-row md:space-x-4 md:mt-0 md:border-0 md:bg-white ">
               {/*<li>
                 <div className="bg-white hidden md:flex md:gap-x-6">
                   <Link href='/features' className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900">
@@ -41,21 +41,19 @@ const Nav = () => {
               </li>*/}
               <li>
                 <div className="bg-white hidden md:flex md:gap-x-6">
-                  <Link
-                    href="/docs"
-                    className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900"
-                  >
-                    Docs
+                  <Link href="/docs">
+                    <a className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900">
+                      Docs
+                    </a>
                   </Link>
                 </div>
               </li>
               <li>
                 <div className="bg-white hidden md:flex md:gap-x-6">
-                  <Link
-                    href="/blog"
-                    className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900"
-                  >
-                    Blog
+                  <Link href="/blog">
+                    <a className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900">
+                      Blog
+                    </a>
                   </Link>
                 </div>
               </li>
