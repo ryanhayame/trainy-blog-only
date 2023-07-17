@@ -8,4 +8,9 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false, module: false }
+
+    return config
+  },
 })
