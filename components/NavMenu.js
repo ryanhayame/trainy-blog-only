@@ -82,10 +82,10 @@ export default function NavMenu() {
       >
         {/*<MenuItem className="font-semibold">
           <Link href="/features">Features</Link>
-        </MenuItem>
+        </MenuItem>*/}
         <MenuItem className="font-semibold">
           <Link href="/docs">Docs</Link>
-        </MenuItem>*/}
+        </MenuItem>
         <MenuItem className="font-semibold">
           <Link href="/blog">Blog</Link>
         </MenuItem>
