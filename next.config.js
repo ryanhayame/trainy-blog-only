@@ -9,8 +9,10 @@ module.exports = withBundleAnalyzer({
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
   webpack: (config) => {
-    config.resolve.fallback = { fs: false, module: false }
-
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      process: require.resolve('process/browser'),
+    }
     return config
   },
 })
