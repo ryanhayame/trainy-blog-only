@@ -20,7 +20,7 @@ import DemoSection from '@/components/DemoSection'
 import FeaturesZigzag from '@/components/FeaturesZigZag'
 import ListSection from '../components/ListSection'
 import FeaturesSection from '../components/FeaturesSection'
-import Typeform from '../components/Typeform'
+import HeyForm from '../components/HeyForm'
 import FAQSection from '@/components/FAQSection'
 
 import Button from '@mui/material/Button'
@@ -89,7 +89,7 @@ export default function Home({ posts }) {
         name="scroll-to-element"
         className="flex justify-center shadow-inner bg-slate-50 w-full py-24 h-fit xs:h-screen items-center"
       >
-        <Typeform />
+        <HeyForm />
       </div>
 
       {/*<div name="scroll-to-element1" className='justify-center shadow-innerDark bg-white w-full h-auto'>
