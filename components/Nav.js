@@ -20,12 +20,12 @@ const Nav = () => {
       >
         <div className="sm: sm: flex md:w-1/2 md:justify-center w-5/12 justify-start pl-2">
           <Link href="/" className="flex items-center">
-            <>
+            <a className="flex items-center">
               <img src="/trainy-transparent.png" className="h-8 mr-1" alt="Trainy Logo" />
               <span className="self-center text-2xl text-black font-bold whitespace-nowrap tracking-tighter">
                 Trainy
               </span>
-            </>
+            </a>
           </Link>
           <div
             className="items-center justify-between hidden w-full md:flex md:w-auto ml-4 border-l"
@@ -33,19 +33,22 @@ const Nav = () => {
           >
             <ul className="flex flex-col ml-2 p-4 md:p-0 mt-4 font-medium border border-white rounded-lg bg-white md:flex-row md:space-x-4 md:mt-0 md:border-0 md:bg-white ">
               {/*<li>
-                                <div className="bg-white hidden md:flex md:gap-x-6">
-                                    <Link href='/features' className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900">
-                                        Features
-                                    </Link>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="bg-white hidden md:flex md:gap-x-6">
-                                    <Link href='/docs' className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900">
-                                        Docs
-                                    </Link>
-                                </div>
-                            </li>*/}
+                <div className="bg-white hidden md:flex md:gap-x-6">
+                  <Link href='/features' className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900">
+                    Features
+                  </Link>
+                </div>
+              </li>*/}
+              <li>
+                <div className="bg-white hidden md:flex md:gap-x-6">
+                  <Link
+                    href="/docs"
+                    className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900"
+                  >
+                    Docs
+                  </Link>
+                </div>
+              </li>
               <li>
                 <div className="bg-white hidden md:flex md:gap-x-6">
                   <Link
