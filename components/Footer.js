@@ -54,7 +54,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="outlined"
-                href="https://discord.gg/Wk9YAZdV"
+                href="https://discord.gg/bTtfp4Msq2"
                 sx={{
                   mr: '10px',
                   p: '5px',
