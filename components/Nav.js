@@ -67,12 +67,13 @@ const Nav = () => {
             rel="noopener noreferrer"
             variant="outlined"
             href="https://github.com/Trainy-ai/nodify"
-            className="border-neutral-300 hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
+            className="hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
             sx={{
               p: '5px',
               minWidth: '40px',
               borderRadius: '10px',
               color: 'black',
+              borderColor: 'lightgray',
               mx: '0px',
               '@media (min-width: 320px)': {
                 mx: '10px',
@@ -89,13 +90,14 @@ const Nav = () => {
             rel="noopener noreferrer"
             variant="outlined"
             href="https://www.linkedin.com/company/trainy-ai/about/"
-            className="border-neutral-300 hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
+            className="hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
             sx={{
               mr: '10px',
               p: '5px',
               minWidth: '40px',
               borderRadius: '10px',
               color: 'black',
+              borderColor: 'lightgray',
               display: 'none', // hide the button by default
               '@media (min-width: 768px)': {
                 display: 'flex', // show the button from medium screen sizes and larger
@@ -112,13 +114,14 @@ const Nav = () => {
             rel="noopener noreferrer"
             variant="outlined"
             href="https://discord.gg/bTtfp4Msq2"
-            className="border-neutral-300 hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
+            className="hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
             sx={{
               mr: '10px',
               p: '5px',
               minWidth: '40px',
               borderRadius: '10px',
               color: 'black',
+              borderColor: 'lightgray',
               display: 'none', // hide the button by default
               '@media (min-width: 768px)': {
                 display: 'flex', // show the button from medium screen sizes and larger
@@ -133,13 +136,14 @@ const Nav = () => {
           <Button
             target="_blank"
             rel="noopener noreferrer"
-            className="mr-0 border-neutral-300 hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800 md:mr-2"
+            className="mr-0 hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800 md:mr-2"
             variant="outlined"
             href="https://twitter.com/TrainyAI"
             sx={{
               p: '5px',
               minWidth: '40px',
               borderRadius: '10px',
+              borderColor: 'lightgray',
               display: 'none', // hide the button by default
               '@media (min-width: 768px)': {
                 display: 'flex', // show the button from medium screen sizes and larger

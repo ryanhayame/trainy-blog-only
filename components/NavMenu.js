@@ -33,12 +33,11 @@ export default function NavMenu() {
             aria-controls={open ? 'account-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
-            className="inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"
+            className="inline-flex items-center rounded-lg p-2 text-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"
           >
             <svg
-              className="block h-6 w-6 md:hidden"
+              className="block h-6 w-6 fill-gray-900 dark:fill-gray-100 md:hidden"
               aria-hidden="true"
-              fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >

@@ -19,13 +19,14 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 variant="outlined"
                 href="https://github.com/Trainy-ai/nodify"
-                className="border-neutral-300 hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
+                className="hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
                 sx={{
                   mr: '10px',
                   p: '5px',
                   minWidth: '35px',
                   borderRadius: '10px',
                   color: 'black',
+                  borderColor: 'lightgray',
                 }}
               >
                 <BsGithub
@@ -40,13 +41,14 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 variant="outlined"
                 href="https://www.linkedin.com/company/trainy-ai/about/"
-                className="border-neutral-300 hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
+                className=" hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
                 sx={{
                   mr: '10px',
                   p: '5px',
                   minWidth: '35px',
                   borderRadius: '10px',
                   color: 'black',
+                  borderColor: 'lightgray',
                 }}
               >
                 <BsLinkedin
@@ -61,13 +63,14 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 variant="outlined"
                 href="https://discord.gg/bTtfp4Msq2"
-                className="border-neutral-300 hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
+                className=" hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
                 sx={{
                   mr: '10px',
                   p: '5px',
                   minWidth: '35px',
                   borderRadius: '10px',
                   color: 'black',
+                  borderColor: 'lightgray',
                 }}
               >
                 <BsDiscord
@@ -82,12 +85,13 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 variant="outlined"
                 href="https://twitter.com/TrainyAI"
-                className="border-neutral-300 hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
+                className="hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
                 sx={{
                   mr: '20px',
                   p: '5px',
                   minWidth: '35px',
                   borderRadius: '10px',
+                  borderColor: 'lightgray',
                 }}
               >
                 <BsTwitter
