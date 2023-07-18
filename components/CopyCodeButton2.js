@@ -31,13 +31,14 @@ const CopyCodeButton2 = () => {
       <Button
         variant="outlined"
         onClick={handleClick}
-        className="bg-slate-50 text-gray-900 dark:border-neutral-600 dark:bg-gray-950 dark:hover:bg-gray-900"
+        className="bg-slate-50 text-gray-900 dark:bg-gray-950 dark:hover:bg-gray-900"
         sx={{
           textTransform: 'none',
           px: '20px',
           py: '10px',
           minWidth: '40px',
           borderRadius: '10px',
+          borderColor: 'darkgray',
           ':focus': {
             border: '1px solid #EFB357',
           },
