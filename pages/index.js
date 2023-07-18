@@ -65,7 +65,7 @@ export default function Home({ posts }) {
 
       <div
         name="scroll-to-element1"
-        className="justify-center shadow-inner bg-slate-50 w-full py-32 h-fit"
+        className="h-fit w-full justify-center bg-slate-50 py-32 shadow-inner dark:bg-darkThemeColor"
       >
         <DemoSection />
       </div>
@@ -76,7 +76,7 @@ export default function Home({ posts }) {
 
       <div
         name="scroll-to-element1"
-        className="justify-center shadow-innerDark bg-white w-full py-20 h-auto"
+        className="h-auto w-full justify-center bg-white py-20 shadow-innerDark dark:bg-gray-900"
       >
         <FeaturesZigzag handleClick={handleClick} />
       </div>
@@ -87,7 +87,7 @@ export default function Home({ posts }) {
 
       <div
         name="scroll-to-element"
-        className="flex justify-center shadow-inner bg-slate-50 w-full py-24 h-fit xs:h-screen items-center"
+        className="flex h-fit w-full items-center justify-center bg-slate-50 py-24 shadow-inner dark:bg-darkThemeColor xs:h-screen"
       >
         <HeyForm />
       </div>

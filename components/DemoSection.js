@@ -1,11 +1,11 @@
 const DemoSection = () => {
   return (
-    <div className="w-full px-4 bg-slate-50">
+    <div className="w-full bg-slate-50 px-4 dark:bg-darkThemeColor ">
       <div className="mb-16 text-center">
-        <h2 className="text-base text-logomid font-semibold tracking-wide uppercase">
+        <h2 className="text-base font-semibold uppercase tracking-wide text-logomid">
           Trainy profiler in action
         </h2>
-        <p className="mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900">
+        <p className="mt-2 pb-4 text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-100 lg:text-7xl">
           Seeing is Believing
         </p>
       </div>
@@ -14,10 +14,10 @@ const DemoSection = () => {
           <img
             src="TrainyDemo.gif"
             alt="hero"
-            className="min-w-none lg:min-w-3/4 mx-auto max-w-full rounded-xl shadow-lg"
+            className="min-w-none lg:min-w-3/4 mx-auto max-w-full rounded-xl shadow-lg dark:brightness-90"
           />
         </div>
-        <div className="absolute bottom-[-40px] -left-10 z-[-1]">
+        <div className="absolute -left-10 bottom-[-40px] z-[-1]">
           <svg
             width="134"
             height="106"
@@ -569,7 +569,7 @@ const DemoSection = () => {
             />
           </svg>
         </div>
-        <div className="absolute -top-6 -right-6 z-[-1]">
+        <div className="absolute -right-6 -top-6 z-[-1]">
           <svg
             width="134"
             height="106"

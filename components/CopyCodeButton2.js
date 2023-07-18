@@ -24,37 +24,32 @@ const CopyCodeButton2 = () => {
   return (
     <div className="flex flex-row">
       <div className="pr-4">
-        <span
-          className="flex w-16 h-16 mx-auto items-center
-                        justify-center text-2xl font-bold rounded-full
-                        bg-orange-50 text-logodark"
-        >
+        <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-orange-50 text-2xl font-bold text-logodark dark:bg-logomid dark:text-white">
           2
         </span>
       </div>
       <Button
         variant="outlined"
         onClick={handleClick}
-        className="text-gray-900 bg-slate-50"
+        className="bg-slate-50 text-gray-900 dark:border-neutral-600 dark:bg-gray-950 dark:hover:bg-gray-900"
         sx={{
           textTransform: 'none',
           px: '20px',
           py: '10px',
           minWidth: '40px',
           borderRadius: '10px',
-          borderColor: 'lightgray',
           ':focus': {
             border: '1px solid #EFB357',
           },
         }}
       >
-        <p className="text-md leading-4 xs:text-lg font-medium text-gray-700 max-w-2xl text-center mr-4">
+        <p className="text-md mr-4 text-center font-medium leading-4 text-gray-700 first-letter:max-w-2xl dark:text-gray-200 dark:hover:text-gray-100 xs:text-lg">
           tensorboard --logdir logs/
         </p>
         {clicked ? (
-          <MdCheck className="text-logodark" size={20} />
+          <MdCheck className="text-logodark dark:text-logomid" size={20} />
         ) : (
-          <MdContentCopy className="text-gray-700" size={20} />
+          <MdContentCopy className="text-gray-700 dark:text-gray-400" size={20} />
         )}
       </Button>
     </div>

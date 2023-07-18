@@ -21,7 +21,7 @@ export async function getStaticProps() {
 
 export default function Blog({ posts, initialDisplayPosts, pagination }) {
   return (
-    <main className="min-h-screen flex flex-col items-center">
+    <main className="flex flex-col items-center">
       <SectionContainer>
         <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
         <ListLayout

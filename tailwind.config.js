@@ -30,6 +30,8 @@ module.exports = {
       },
       boxShadow: {
         innerDark: 'inset 0 2px 4px 0 rgb(0 0 0 / 0.1)',
+        darkMode: '0 4px 4px 0 rgba(0, 0, 0, 0.3)',
+        darkMode2: 'inset 0 4px 4px 0 rgba(0, 0, 0, 0.3)',
       },
       spacing: {
         '9/16': '56.25%',
@@ -44,12 +46,13 @@ module.exports = {
         sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: colors.teal,
+        primary: colors.orange,
         gray: colors.neutral,
         logodark: '#DD5141',
         logolight: '#EFB357',
         logomid: '#E6824C',
         logolightest: '#f7d8a8',
+        darkThemeColor: '#1a1b1e',
       },
       typography: (theme) => ({
         DEFAULT: {

@@ -8,6 +8,7 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
+  swcMinify: false,
   webpack: (config) => {
     config.resolve.fallback = {
       ...config.resolve.fallback,
