@@ -31,7 +31,7 @@ const CopyCodeButton = () => {
       <Button
         variant="outlined"
         onClick={handleClick}
-        className="bg-slate-50 text-gray-900 dark:bg-gray-950 dark:hover:bg-gray-900"
+        className="bg-slate-50 text-gray-900 dark:bg-darkThemeColor dark:hover:bg-gray-900"
         sx={{
           textTransform: 'none',
           px: '20px',

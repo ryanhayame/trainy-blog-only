@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
+import { useTheme } from 'next-themes'
 
 const HeaderSection = (props) => {
+  const { theme, setTheme, resolvedTheme } = useTheme()
+
   return (
     <div className="flex min-h-small w-full items-center justify-center bg-white py-12 dark:bg-gray-900 xs:h-screen md:py-24">
       <div className="mx-2 flex h-screen flex-col items-center justify-center justify-items-center pt-0 xs:py-24">
@@ -65,12 +68,21 @@ const HeaderSection = (props) => {
               Backed By
             </h5>
             <div className="flex items-center justify-center">
-              <img
-                data-aos="fade-up"
-                data-aos-delay="350"
-                src="yc.svg"
-                className="mx-4 mt-2 h-10"
-              />
+              {theme === 'light' ? (
+                <img
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                  src="yc.svg"
+                  className="mx-4 mt-2 h-10"
+                />
+              ) : (
+                <img
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                  src="yc2.svg"
+                  className="mx-4 mt-2 h-10"
+                />
+              )}
             </div>
           </div>
         </div>

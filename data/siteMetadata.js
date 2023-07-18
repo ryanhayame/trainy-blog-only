@@ -2,7 +2,7 @@ const siteMetadata = {
   title: 'Trainy',
   author: 'Ryan Hayame',
   headerTitle: 'Trainy',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description: 'Unlock your model performance potential',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://trainy.ai',
