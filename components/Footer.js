@@ -62,7 +62,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="outlined"
-                href="https://discord.gg/bTtfp4Msq2"
+                href="https://discord.gg/xfqeNjEA"
                 className=" hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
                 sx={{
                   mr: '10px',

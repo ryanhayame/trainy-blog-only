@@ -6,7 +6,7 @@ const HeyForm = () => {
   return (
     <>
       <iframe
-        className="xs:min-h-full heyform-iframe min-h-[calc(80vh)] w-full rounded-xl shadow-lg dark:brightness-75 sm:max-h-full md:w-3/4"
+        className="xs:min-h-full heyform-iframe min-h-[calc(80vh)] w-5/6 rounded-xl shadow-lg dark:brightness-75 sm:max-h-full md:w-3/4"
         loading="lazy"
         src="https://my.heyform.net/f/KrOO98HE"
       ></iframe>
