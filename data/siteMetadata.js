@@ -8,7 +8,7 @@ const siteMetadata = {
   siteUrl: 'https://trainy.ai',
   siteRepo: 'https://github.com/Trainy-ai/nodify',
   siteLogo: '/static/images/google.png',
-  image: '/static/images/avatar.png',
+  image: '/static/images/roanak.jpg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'address@yoursite.com',
   github: 'https://github.com',

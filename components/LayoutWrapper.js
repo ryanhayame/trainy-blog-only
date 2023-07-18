@@ -12,7 +12,7 @@ const LayoutWrapper = ({ children }) => {
   return (
     <>
       <Nav />
-      <div className="flex flex-col">
+      <div className="flex min-h-[calc(100vh_-_64px)] flex-col">
         {/*
         <header className="flex items-center justify-between py-10">
           <div>
