@@ -4,7 +4,7 @@ date: '2023-07-17'
 draft: false
 summary: Trainy is your ultimate training optimization companion.
 tags: [Introduction, Setup, FAQ]
-canonicalUrl: first
+canonicalUrl: introducing-trainy
 authors: ['default']
 ---
 

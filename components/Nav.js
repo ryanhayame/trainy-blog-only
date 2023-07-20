@@ -21,7 +21,7 @@ const Nav = () => {
         <div className="sm: sm: flex w-5/12 justify-start pl-2 md:w-1/2 md:justify-center">
           <Link href="/" className="flex items-center">
             <a className="flex items-center">
-              <img src="/trainy-transparent.png" className="mr-1 h-8" alt="Trainy Logo" />
+              <img src="/trainy-transparent.png" className="mr-1 h-6" alt="Trainy Logo" />
               <span className="self-center whitespace-nowrap text-2xl font-bold tracking-tighter text-black dark:text-gray-100">
                 Trainy
               </span>
@@ -38,7 +38,7 @@ const Nav = () => {
                     Features
                   </Link>
                 </div>
-              </li>*/}
+              </li>
               <li>
                 <div className="hidden bg-white dark:bg-gray-950 md:flex md:gap-x-6">
                   <Link href="/docs">
@@ -47,7 +47,7 @@ const Nav = () => {
                     </a>
                   </Link>
                 </div>
-              </li>
+              </li>*/}
               <li>
                 <div className="hidden bg-white dark:bg-gray-950 md:flex md:gap-x-6">
                   <Link href="/blog">
@@ -156,7 +156,9 @@ const Nav = () => {
             />
           </Button>
           {/*<button onClick={handleClick} type="button" className="text-white drop-shadow-xl bg-black hover:bg-logomid font-medium rounded-lg text-sm text-center px-4 py-2 mr-2 hidden md:block">Get started</button>*/}
-          <NavMenu />
+          <div className="block md:hidden">
+            <NavMenu className="block md:hidden" />
+          </div>
         </div>
       </nav>
     </>

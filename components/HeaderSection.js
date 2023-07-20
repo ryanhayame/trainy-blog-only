@@ -1,8 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 
 const HeaderSection = (props) => {
+  const [mounted, setMounted] = useState(false)
+
   const { theme, setTheme, resolvedTheme } = useTheme()
+
+  // When mounted on client, now we can show the UI
+  useEffect(() => setMounted(true), [])
 
   return (
     <div className="flex min-h-small w-full items-center justify-center bg-white py-12 dark:bg-gray-900 xs:h-screen md:py-24">
@@ -68,18 +73,18 @@ const HeaderSection = (props) => {
               Backed By
             </h5>
             <div className="flex items-center justify-center">
-              {theme === 'light' ? (
+              {mounted && (theme === 'dark' || resolvedTheme === 'dark') ? (
                 <img
                   data-aos="fade-up"
                   data-aos-delay="350"
-                  src="yc.svg"
+                  src="yc2.svg"
                   className="mx-4 mt-2 h-10"
                 />
               ) : (
                 <img
                   data-aos="fade-up"
                   data-aos-delay="350"
-                  src="yc2.svg"
+                  src="yc.svg"
                   className="mx-4 mt-2 h-10"
                 />
               )}
