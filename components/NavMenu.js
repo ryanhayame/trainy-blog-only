@@ -23,7 +23,7 @@ export default function NavMenu() {
     setAnchorEl(null)
   }
   return (
-    <React.Fragment>
+    <React.Fragment className="block md:hidden">
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
         <Tooltip>
           <IconButton
@@ -81,10 +81,10 @@ export default function NavMenu() {
       >
         {/*<MenuItem className="font-semibold">
           <Link href="/features">Features</Link>
-        </MenuItem>*/}
+        </MenuItem>
         <MenuItem className="font-semibold">
           <Link href="/docs">Docs</Link>
-        </MenuItem>
+        </MenuItem>*/}
         <MenuItem className="font-semibold">
           <Link href="/blog">Blog</Link>
         </MenuItem>

@@ -1,6 +1,6 @@
 ---
 name: Roanak Baviskar
-avatar: /static/images/roanak.jpg
+avatar: /static/images/roanak.png
 occupation: Co-Founder & CEO at Trainy
 company: Trainy
 email: roanak@trainy.ai

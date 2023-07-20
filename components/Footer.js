@@ -3,11 +3,11 @@ import { BsGithub, BsLinkedin, BsDiscord, BsTwitter } from 'react-icons/bs'
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-slate-50 dark:bg-gray-950 dark:shadow-darkMode2">
+    <footer className="w-full bg-slate-50 dark:bg-darkThemeColor">
       <div className="mx-auto w-full max-w-screen-xl p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a href="https://trainy.ai/" className="mb-4 flex items-center sm:mb-0">
-            <img src="trainy-transparent.png" className="mr-1 h-8" alt="Trainy Logo" />
+            <img src="/trainy-transparent.png" className="mr-1 h-8" alt="Trainy Logo" />
             <span className="self-center whitespace-nowrap text-2xl font-bold tracking-tighter text-black dark:text-gray-100">
               Trainy
             </span>

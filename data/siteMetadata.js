@@ -7,9 +7,9 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://trainy.ai',
   siteRepo: 'https://github.com/Trainy-ai/nodify',
-  siteLogo: '/static/images/google.png',
-  image: '/static/images/roanak.jpg',
-  socialBanner: '/static/images/twitter-card.png',
+  siteLogo: '/static/images/logo.png',
+  image: '/static/images/roanak.png',
+  socialBanner: '/static/images/logo.png',
   email: 'address@yoursite.com',
   github: 'https://github.com',
   twitter: 'https://twitter.com/Twitter',
@@ -25,7 +25,7 @@ const siteMetadata = {
     simpleAnalytics: false, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
     googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
-    posthogAnalyticsId: '', // posthog.init e.g. phc_5yXvArzvRdqtZIsHkEm3Fkkhm3d0bEYUXCaFISzqPSQ
+    posthogAnalyticsId: 'phc_4UgX80BfVNmYRZ2o3dJLyRMGkv1CxBozPAcPnD29uP4', // posthog.init e.g. phc_5yXvArzvRdqtZIsHkEm3Fkkhm3d0bEYUXCaFISzqPSQ
   },
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
