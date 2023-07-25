@@ -1,6 +1,6 @@
 const siteMetadata = {
   title: 'Trainy',
-  author: 'Ryan Hayame',
+  author: 'Trainy',
   headerTitle: 'Trainy',
   description: 'Unlock your model performance potential',
   language: 'en-us',
