@@ -7,6 +7,7 @@ app = "trainy-main"
 primary_region = "sjc"
 
 [http_service]
+  handlers = ["http"]
   internal_port = 3000
   force_https = true
   auto_stop_machines = true
