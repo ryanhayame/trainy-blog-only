@@ -34,15 +34,22 @@ Currently, traces files have to be extracted using [Pytorch Profiler](https://py
 
 Luckily, we've developed a solution to profile your model's forward and backward passes **during training**. We will be releasing our solution for gathering trace files online later this week, so be sure to stay updated.
 
+UPDATE:
+We've now released our On-Demand profiling solution. Take a look at the usage details in our [new blog post](https://trainy.ai/blog/feature-update-1) or check it out on [Github](https://github.com/Trainy-ai/trainy).
+
 ## DataLoaders
 
 One of the key factors that can significantly slow down your training is a slow dataloader. How can you identify this issue?
 
-Look out for high GPU idle times as well as poor GPU and network utilization.
+Look out for high GPU idle times as well as poor GPU and network utilization in your Temporal Breakdown.
 
 ![img](/static/images/1/bad-dataloader.png 'Bad DataLoader')
 
 You can see the GPUs are just idly waiting, and their time spent idle is not parallelized well with the time spent on internode communication. This is generally a symptom of a slow dataloader, but could also be related to what level of model/pipeline parallelism you are using.
+
+Another signal will be in your Progress graph. You will notice a lack of consistency in the All-Reduce starts across your different iterations.
+
+![img](/static/images/1/bad-dataloader-2.png 'Bad DataLoader')
 
 To tackle this, consider implementing the following solutions:
 
