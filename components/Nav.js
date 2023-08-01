@@ -66,7 +66,7 @@ const Nav = () => {
             target="_blank"
             rel="noopener noreferrer"
             variant="outlined"
-            href="https://github.com/Trainy-ai/nodify"
+            href="https://github.com/Trainy-ai"
             className="hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
             sx={{
               p: '5px',
@@ -113,7 +113,7 @@ const Nav = () => {
             target="_blank"
             rel="noopener noreferrer"
             variant="outlined"
-            href="https://discord.gg/xfqeNjEA"
+            href="https://discord.gg/MXAgZXpU"
             className="hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
             sx={{
               mr: '10px',
