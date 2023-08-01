@@ -38,7 +38,7 @@ function FeaturesZigzag(props) {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://github.com/Trainy-ai/nodify"
+                      href="https://github.com/Trainy-ai"
                       className="underline hover:text-logomid"
                     >
                       GitHub

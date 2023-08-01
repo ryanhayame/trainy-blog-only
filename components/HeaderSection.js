@@ -43,7 +43,7 @@ const HeaderSection = (props) => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/Trainy-ai/nodify"
+            href="https://github.com/Trainy-ai"
             data-aos="fade-up"
             data-aos-delay="150"
             className="inline-flex cursor-pointer items-center justify-center rounded-lg bg-black px-5 py-3 text-center text-base font-medium text-white drop-shadow-xl hover:bg-logomid dark:bg-logomid dark:hover:bg-logodark"

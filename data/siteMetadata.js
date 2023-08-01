@@ -6,7 +6,7 @@ const siteMetadata = {
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://trainy.ai',
-  siteRepo: 'https://github.com/Trainy-ai/nodify',
+  siteRepo: 'https://github.com/Trainy-ai',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/roanak.png',
   socialBanner: '/static/images/logo.png',
