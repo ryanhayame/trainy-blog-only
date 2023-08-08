@@ -51,6 +51,7 @@ const Nav = () => {
                   </Link>
                 </div>
               </li>
+              {/*
               <li>
                 <div className="hidden bg-white dark:bg-gray-950 md:flex md:gap-x-6">
                   <Link href="https://docs.trainy.ai/">
@@ -63,6 +64,7 @@ const Nav = () => {
                   </Link>
                 </div>
               </li>
+              */}
             </ul>
           </div>
         </div>

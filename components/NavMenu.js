@@ -87,11 +87,13 @@ export default function NavMenu() {
             Blog
           </Link>
         </MenuItem>
+        {/*
         <MenuItem className="font-semibold">
           <Link aria-label="Docs" href="https://docs.trainy.ai/">
             Docs
           </Link>
         </MenuItem>
+        */}
       </Menu>
     </React.Fragment>
   )
