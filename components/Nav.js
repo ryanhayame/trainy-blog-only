@@ -38,25 +38,33 @@ const Nav = () => {
                     Features
                   </Link>
                 </div>
-              </li>
-              <li>
-                <div className="hidden bg-white dark:bg-gray-950 md:flex md:gap-x-6">
-                  <Link href="/docs">
-                    <a className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900 dark:text-gray-100 dark:hover:bg-darkThemeColor dark:hover:text-white">
-                      Docs
-                    </a>
-                  </Link>
-                </div>
               </li>*/}
               <li>
                 <div className="hidden bg-white dark:bg-gray-950 md:flex md:gap-x-6">
                   <Link href="/blog">
-                    <a className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900 dark:text-gray-100 dark:hover:bg-darkThemeColor dark:hover:text-white">
+                    <a
+                      className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900 dark:text-gray-100 dark:hover:bg-darkThemeColor dark:hover:text-white"
+                      aria-label="Blog"
+                    >
                       Blog
                     </a>
                   </Link>
                 </div>
               </li>
+              {/*
+              <li>
+                <div className="hidden bg-white dark:bg-gray-950 md:flex md:gap-x-6">
+                  <Link href="https://docs.trainy.ai/">
+                    <a
+                      className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900 dark:text-gray-100 dark:hover:bg-darkThemeColor dark:hover:text-white"
+                      aria-label="Docs"
+                    >
+                      Docs
+                    </a>
+                  </Link>
+                </div>
+              </li>
+              */}
             </ul>
           </div>
         </div>
@@ -67,6 +75,7 @@ const Nav = () => {
             rel="noopener noreferrer"
             variant="outlined"
             href="https://github.com/Trainy-ai"
+            aria-label="Github"
             className="hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
             sx={{
               p: '5px',
@@ -90,6 +99,7 @@ const Nav = () => {
             rel="noopener noreferrer"
             variant="outlined"
             href="https://www.linkedin.com/company/trainy-ai/about/"
+            aria-label="LinkedIn"
             className="hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
             sx={{
               mr: '10px',
@@ -114,6 +124,7 @@ const Nav = () => {
             rel="noopener noreferrer"
             variant="outlined"
             href="https://discord.gg/MXAgZXpU"
+            aria-label="Discord"
             className="hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
             sx={{
               mr: '10px',
@@ -139,6 +150,7 @@ const Nav = () => {
             className="mr-0 hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800 md:mr-2"
             variant="outlined"
             href="https://twitter.com/TrainyAI"
+            aria-label="Twitter"
             sx={{
               p: '5px',
               minWidth: '40px',
