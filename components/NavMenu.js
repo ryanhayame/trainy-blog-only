@@ -81,12 +81,16 @@ export default function NavMenu() {
       >
         {/*<MenuItem className="font-semibold">
           <Link href="/features">Features</Link>
-        </MenuItem>
-        <MenuItem className="font-semibold">
-          <Link href="/docs">Docs</Link>
         </MenuItem>*/}
         <MenuItem className="font-semibold">
-          <Link href="/blog">Blog</Link>
+          <Link aria-label="Blog" href="/blog">
+            Blog
+          </Link>
+        </MenuItem>
+        <MenuItem className="font-semibold">
+          <Link aria-label="Docs" href="https://docs.trainy.ai/">
+            Docs
+          </Link>
         </MenuItem>
       </Menu>
     </React.Fragment>

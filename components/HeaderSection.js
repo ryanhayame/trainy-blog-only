@@ -44,6 +44,7 @@ const HeaderSection = (props) => {
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/Trainy-ai"
+            aria-label="Trainy Github"
             data-aos="fade-up"
             data-aos-delay="150"
             className="inline-flex cursor-pointer items-center justify-center rounded-lg bg-black px-5 py-3 text-center text-base font-medium text-white drop-shadow-xl hover:bg-logomid dark:bg-logomid dark:hover:bg-logodark"
@@ -79,6 +80,7 @@ const HeaderSection = (props) => {
                   data-aos-delay="350"
                   src="yc2.svg"
                   className="mx-4 mt-2 h-10"
+                  alt="White Y Combinator Logo"
                 />
               ) : (
                 <img
@@ -86,6 +88,7 @@ const HeaderSection = (props) => {
                   data-aos-delay="350"
                   src="yc.svg"
                   className="mx-4 mt-2 h-10"
+                  alt="Black Y Combinator Logo"
                 />
               )}
             </div>
