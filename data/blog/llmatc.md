@@ -24,7 +24,7 @@ conda activate sky
 pip uninstall grpcio; conda install -c conda-forge grpcio=1.43.0
 
 # install the skypilot cli and dependency, for the clouds you want, e.g. GCP
-pip install skypilot[gcp] # for aws, skypilot[aws]
+pip install "skypilot[aws,gcp] @ git+https://github.com/skypilot-org/skypilot.git"
 
 # Configure your cloud credentials. This is a GCP example. See https://skypilot.readthedocs.io/en/latest/getting-started/ installation.html for examples with other cloud providers.
 pip install google-api-python-client
@@ -113,4 +113,7 @@ curl http://localhost:8000/v1/chat/completions   -H "Content-Type: application/j
 
 ## Coming Soon
 
-We plan on adding support for more finetuning methods and base models in the future. We'll be adding integrations so that you can connect your custom models to your favorite LLM tools like LangChain and LlamaIndex. In the meantime, check out the GitHub repository [here](https://github.com/Trainy-ai/llm-atc).
+We plan on adding support for more finetuning methods and base models in the future. We'll be adding integrations so that you can connect your custom models to your favorite LLM tools like LangChain and LlamaIndex. In the meantime, check out [the GitHub repository](https://github.com/Trainy-ai/llm-atc).
+
+- [LLM ATC documentation](https://llm-atc.readthedocs.io/en/latest/index.html)
+- [LLM ATC Github](https://github.com/Trainy-ai/llm-atc)
