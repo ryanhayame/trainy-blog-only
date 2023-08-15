@@ -66,13 +66,13 @@ const HeaderSection = (props) => {
         </div>
         <div className="container mx-2 mb-8 mt-16 h-1/5 flex-col items-center justify-center xs:mt-44">
           <div className="flex flex-col items-center justify-center">
-            <h5
+            <p
               data-aos="fade-up"
               data-aos-delay="300"
               className="text-xl font-medium text-black dark:text-gray-100"
             >
               Backed By
-            </h5>
+            </p>
             <div className="flex items-center justify-center">
               {mounted && (theme === 'dark' || resolvedTheme === 'dark') ? (
                 <img

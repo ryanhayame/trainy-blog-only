@@ -1,6 +1,9 @@
 import React from 'react'
 import CopyCodeButton from './CopyCodeButton'
 import CopyCodeButton2 from './CopyCodeButton2'
+import Image from 'next/image'
+import easyPic from 'public/easy.png'
+import powerfulPic from 'public/powerful.png'
 
 function FeaturesZigzag(props) {
   return (
@@ -40,6 +43,7 @@ function FeaturesZigzag(props) {
                       rel="noopener noreferrer"
                       href="https://github.com/Trainy-ai"
                       className="underline hover:text-logomid"
+                      aria-label="Trainy Github"
                     >
                       GitHub
                     </a>
@@ -53,15 +57,15 @@ function FeaturesZigzag(props) {
             <div className="items-center lg:grid lg:grid-cols-12 lg:gap-6">
               {/* Image */}
               <div
-                className="rtl mx-auto mb-8 max-w-xl md:col-span-5 md:w-full md:max-w-none lg:col-span-6 lg:mb-0"
+                className="rtl mx-auto mb-8 flex max-w-xl justify-center md:col-span-5 md:w-full md:max-w-none lg:col-span-6 lg:mb-0"
                 data-aos="fade-up"
               >
-                <img
+                <Image
                   loading="lazy"
                   className="mx-auto h-auto max-w-full rounded-xl dark:brightness-90"
-                  src="easy.png"
-                  width="540"
-                  height="405"
+                  src={easyPic}
+                  width={540}
+                  height={385}
                   alt="Features 02"
                 />
               </div>
@@ -86,15 +90,15 @@ function FeaturesZigzag(props) {
             <div className="items-center lg:grid lg:grid-cols-12 lg:gap-6">
               {/* Image */}
               <div
-                className="mx-auto mb-8 max-w-xl md:order-1 md:col-span-5 md:w-full md:max-w-none lg:col-span-6 lg:mb-0"
+                className="mx-auto mb-8 flex max-w-xl justify-center md:order-1 md:col-span-5 md:w-full md:max-w-none lg:col-span-6 lg:mb-0"
                 data-aos="fade-up"
               >
-                <img
+                <Image
                   loading="lazy"
                   className="mx-auto h-auto max-w-full rounded-xl dark:brightness-90"
-                  src="powerful.png"
-                  width="540"
-                  height="405"
+                  src={powerfulPic}
+                  width={540}
+                  height={385}
                   alt="Features 03"
                 />
               </div>
