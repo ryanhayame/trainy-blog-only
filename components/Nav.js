@@ -6,6 +6,7 @@ import { animateScroll as scroll, scroller } from 'react-scroll'
 import NavMenu from './NavMenu'
 import HeaderSection from './HeaderSection'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import Button from '@mui/material/Button'
 import { BsGithub, BsLinkedin, BsDiscord, BsTwitter } from 'react-icons/bs'
@@ -21,7 +22,9 @@ const Nav = () => {
         <div className="sm: sm: flex w-5/12 justify-start pl-2 md:w-1/2 md:justify-center">
           <Link href="/" className="flex items-center">
             <a className="flex items-center">
-              <img src="/trainy-transparent.png" className="mr-1 h-6" alt="Trainy Logo" />
+              <div className="mr-1 flex items-center">
+                <Image src="/trainy-transparent.png" width={30} height={30} alt="Trainy Logo" />
+              </div>
               <span className="self-center whitespace-nowrap text-2xl font-bold tracking-tighter text-black dark:text-gray-100">
                 Trainy
               </span>
@@ -75,7 +78,7 @@ const Nav = () => {
             rel="noopener noreferrer"
             variant="outlined"
             href="https://github.com/Trainy-ai"
-            aria-label="Github"
+            aria-label="Trainy Github"
             className="hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
             sx={{
               p: '5px',
@@ -99,7 +102,7 @@ const Nav = () => {
             rel="noopener noreferrer"
             variant="outlined"
             href="https://www.linkedin.com/company/trainy-ai/about/"
-            aria-label="LinkedIn"
+            aria-label="Trainy LinkedIn"
             className="hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
             sx={{
               mr: '10px',
@@ -124,7 +127,7 @@ const Nav = () => {
             rel="noopener noreferrer"
             variant="outlined"
             href="https://discord.gg/MXAgZXpU"
-            aria-label="Discord"
+            aria-label="Trainy Discord"
             className="hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
             sx={{
               mr: '10px',
@@ -150,7 +153,7 @@ const Nav = () => {
             className="mr-0 hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800 md:mr-2"
             variant="outlined"
             href="https://twitter.com/TrainyAI"
-            aria-label="Twitter"
+            aria-label="Trainy Twitter"
             sx={{
               p: '5px',
               minWidth: '40px',

@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import DemoGif from 'public/TrainyDemo.gif'
+
 const DemoSection = () => {
   return (
     <div className="w-full bg-slate-50 px-4 dark:bg-darkThemeColor ">
@@ -11,13 +14,16 @@ const DemoSection = () => {
       </div>
       <div className="wow fadeInUp relative z-10 mx-auto max-w-[845px]" data-wow-delay=".25s">
         <div className="min-w-none lg:min-w-3/4">
-          <img
-            src="TrainyDemo.gif"
-            alt="hero"
-            className="min-w-none lg:min-w-3/4 mx-auto max-w-full rounded-xl shadow-lg dark:brightness-90"
+          <Image
+            loading="lazy"
+            src={DemoGif}
+            alt="Trainy Demo Gif"
+            height={475}
+            width={845}
+            className="min-w-none lg:min-w-3/4 mx-auto max-w-full rounded-xl bg-slate-50 dark:bg-darkThemeColor dark:brightness-90"
           />
         </div>
-        <div className="absolute -left-10 bottom-[-40px] z-[-1]">
+        <div className="absolute -left-10 bottom-[-35px] z-[-1]">
           <svg
             width="134"
             height="106"

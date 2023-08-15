@@ -30,6 +30,7 @@ export default function NavMenu() {
             onClick={handleClick}
             size="small"
             sx={{ ml: 1 }}
+            aria-label="Hamburger Menu"
             aria-controls={open ? 'account-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}

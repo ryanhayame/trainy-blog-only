@@ -1,5 +1,6 @@
 import Button from '@mui/material/Button'
 import { BsGithub, BsLinkedin, BsDiscord, BsTwitter } from 'react-icons/bs'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -7,7 +8,9 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-screen-xl p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a href="https://trainy.ai/" className="mb-4 flex items-center sm:mb-0">
-            <img src="/trainy-transparent.png" className="mr-1 h-8" alt="Trainy Logo" />
+            <div className="mr-1 flex items-center">
+              <Image src="/trainy-transparent.png" width={30} height={30} alt="Trainy Logo" />
+            </div>
             <span className="self-center whitespace-nowrap text-2xl font-bold tracking-tighter text-black dark:text-gray-100">
               Trainy
             </span>
@@ -19,6 +22,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 variant="outlined"
                 href="https://github.com/Trainy-ai"
+                aria-label="Trainy Github"
                 className="hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
                 sx={{
                   mr: '10px',
@@ -41,6 +45,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 variant="outlined"
                 href="https://www.linkedin.com/company/trainy-ai/about/"
+                aria-label="Trainy LinkedIn"
                 className=" hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
                 sx={{
                   mr: '10px',
@@ -63,6 +68,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 variant="outlined"
                 href="https://discord.gg/MXAgZXpU"
+                aria-label="Trainy Discord"
                 className=" hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
                 sx={{
                   mr: '10px',
@@ -85,6 +91,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 variant="outlined"
                 href="https://twitter.com/TrainyAI"
+                aria-label="Trainy Twitter"
                 className="hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
                 sx={{
                   mr: '20px',
