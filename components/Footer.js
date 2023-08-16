@@ -67,7 +67,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="outlined"
-                href="https://discord.gg/MXAgZXpU"
+                href="https://discord.gg/HQUBJSVgAP"
                 aria-label="Trainy Discord"
                 className=" hover:border-neutral-500 dark:border-neutral-600 dark:hover:bg-neutral-800"
                 sx={{
