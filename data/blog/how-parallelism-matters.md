@@ -1,10 +1,10 @@
 ---
 title: 'How Data Parallelism & Hardware Affect Speed'
-date: '2023-09-12'
+date: '2023-09-14'
 draft: false
 summary: How fast you can train your model depends on your hardware and your parallelism strategy. Knowing your hardware will guide you on which strategy you should use.
 tags: [Training, DDP, FSDP, Data Parallelism]
-canonicalUrl: data_parallel
+canonicalUrl: data-parallel
 authors: ['default']
 ---
 
