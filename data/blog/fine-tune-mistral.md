@@ -1,6 +1,6 @@
 ---
 title: 'Finetuning Mistral 7B'
-date: '2023-10-26'
+date: '2023-10-27'
 draft: false
 summary: How to fine tune and serve your own Mistral 7B model.
 tags: [Finetuning, Mistral]
