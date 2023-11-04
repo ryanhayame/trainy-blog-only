@@ -12,7 +12,7 @@ authors: ['default']
 
 The compute requirements to train large models such as LLMs and text2image models requires both an evergrowing amount of training data and compute. For example, [training a GPT-3 30B model using 256 A100-40GB GPUs takes ~36 days](https://www.mosaicml.com/blog/gpt-3-quality-for-500k). Most of the recent advances in parallelism have focused on model sharding in order scale models way beyond what can fit onto a single GPU. However, parallelism strategy plays a large role in how fast training can be executed, easily resulting in upwards of 50% improvement in training speed. We illustrate this with a simple language modeling experiment.
 
-## Causual Language Modeling with DDP & FSDP
+## Causal Language Modeling with DDP & FSDP
 
 We tested both [Distributed Data Parallel (DDP)](https://pytorch.org/tutorials/intermediate/ddp_tutorial.html) and [Fully Sharded Data Parallel (FSDP)](https://pytorch.org/tutorials/intermediate/FSDP_tutorial.html). While DDP has a full copy of the model on each GPU, FSDP shards the model across different GPUs. We trained a GPT-2 causal LM on the wikitext dataset using [this script from HuggingFace](https://huggingface.co/blog/assets/62_pytorch_fsdp/run_clm_no_trainer.py) on a DGX 8xA100-80GB networked via NVLink (600GB/s). For all the model and batch sizes we consider, the entire model can fit and be trained on a single GPU. The data parallelism strategy can be selected with:
 
