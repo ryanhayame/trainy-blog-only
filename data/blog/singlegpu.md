@@ -1,8 +1,8 @@
 ---
-title: 'Fundamentals of efficient training on a single GPU'
-date: '2023-11-03'
+title: 'Fundamentals of Efficient Training on a Single GPU'
+date: '2023-11-04'
 draft: false
-summary: Here we show current out-of-the-box techniques for training on a single GPU
+summary: Here we show current out-of-the-box techniques for training on a single GPU.
 tags: [Training]
 canonicalUrl: singlegpu
 authors: ['default']

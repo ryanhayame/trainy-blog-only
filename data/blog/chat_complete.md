@@ -1,5 +1,5 @@
 ---
-title: 'Drop-In replacement for GPT with Llama 2 for OpenAI API'
+title: 'Drop-In Replacement for GPT with Llama 2 for OpenAI API'
 date: '2023-08-14'
 draft: false
 summary: Use your favorite LLM application frameworks like Llama Index or Langchain with your self-served open source model deployment.
