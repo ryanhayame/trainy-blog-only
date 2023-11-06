@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 
-const HeaderSection = (props) => {
+import { TypeAnimation } from 'react-type-animation'
+
+const HeaderSection = () => {
   const [mounted, setMounted] = useState(false)
 
   const { theme, setTheme, resolvedTheme } = useTheme()
@@ -16,40 +18,57 @@ const HeaderSection = (props) => {
           <h1
             data-aos="fade-up"
             data-aos-delay="100"
-            className="text-center text-5xl font-extrabold text-gray-900 dark:text-gray-100 md:text-6xl lg:text-7xl"
+            className="text-center text-4xl font-extrabold text-gray-900 dark:text-gray-100 xs:text-5xl md:text-6xl lg:text-7xl"
           >
-            Unlock your model
+            Fully Managed
           </h1>
           <h1
             data-aos="fade-up"
             data-aos-delay="100"
-            className="text-center text-5xl font-extrabold text-gray-900 dark:text-gray-100 md:text-6xl lg:text-7xl"
+            className="text-center text-4xl font-extrabold text-gray-900 dark:text-gray-100 xs:text-5xl md:text-6xl lg:text-7xl"
           >
             <span className="bg-gradient-to-r from-logodark to-logolight bg-clip-text text-transparent">
-              performance
+              AI Infrastructure
             </span>{' '}
-            potential
+            For All
           </h1>
           <p
             data-aos="fade-up"
             data-aos-delay="150"
-            className="mx-4 mt-12 max-w-2xl text-center text-lg text-gray-700 dark:text-gray-400 lg:text-2xl"
+            className="mx-4 mt-4 max-w-3xl text-center text-lg text-gray-700 dark:text-gray-300 xs:mt-10 lg:text-2xl"
           >
-            We help ML engineers training large models isolate performance bottlenecks and boost
-            training speed.
+            We help teams
+            <span>
+              <TypeAnimation
+                sequence={[
+                  // Same substring at the start will only be typed out once, initially
+                  ' train',
+                  1000, // wait 1s before replacing "Mice" with "Hamsters"
+                  ' deploy',
+                  1000,
+                  ' scale',
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                className="mt-4 max-w-3xl text-center text-lg text-logomid dark:text-logomid xs:mt-10 lg:text-2xl"
+                repeat={Infinity}
+              />
+            </span>
+            AI models, effortlessly.
           </p>
         </div>
         <div className="mt-12 flex flex-col items-center justify-center">
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/Trainy-ai"
-            aria-label="Trainy Github"
+            href="/get-started"
+            aria-label="Get Started Page"
             data-aos="fade-up"
             data-aos-delay="150"
-            className="inline-flex cursor-pointer items-center justify-center rounded-lg bg-black px-5 py-3 text-center text-base font-medium text-white drop-shadow-xl hover:bg-logomid dark:bg-logomid dark:hover:bg-logodark"
+            className="inline-flex cursor-pointer items-center justify-center rounded-lg bg-black px-5 py-3 text-center text-base font-medium text-white drop-shadow-xl hover:bg-logomid dark:bg-logomid dark:hover:bg-logodark2"
           >
-            Learn more
+            Learn More
             <svg
               className="-mr-1 ml-2 h-5 w-5"
               fill="currentColor"
@@ -64,11 +83,11 @@ const HeaderSection = (props) => {
             </svg>
           </a>
         </div>
-        <div className="container mx-2 mb-8 mt-16 h-1/5 flex-col items-center justify-center xs:mt-44">
+        <div className="container mx-2 mb-8 mt-8 h-1/5 flex-col items-center justify-center xs:mt-44">
           <div className="flex flex-col items-center justify-center">
             <p
               data-aos="fade-up"
-              data-aos-delay="300"
+              data-aos-delay="200"
               className="text-xl font-medium text-black dark:text-gray-100"
             >
               Backed By
@@ -77,7 +96,7 @@ const HeaderSection = (props) => {
               {mounted && (theme === 'dark' || resolvedTheme === 'dark') ? (
                 <img
                   data-aos="fade-up"
-                  data-aos-delay="350"
+                  data-aos-delay="250"
                   src="yc2.svg"
                   className="mx-4 mt-2 h-10"
                   alt="White Y Combinator Logo"
@@ -85,7 +104,7 @@ const HeaderSection = (props) => {
               ) : (
                 <img
                   data-aos="fade-up"
-                  data-aos-delay="350"
+                  data-aos-delay="250"
                   src="yc.svg"
                   className="mx-4 mt-2 h-10"
                   alt="Black Y Combinator Logo"
