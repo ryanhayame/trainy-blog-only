@@ -1,10 +1,6 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-import { animateScroll as scroll, scroller } from 'react-scroll'
 import NavMenu from './NavMenu'
-import HeaderSection from './HeaderSection'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -14,6 +10,15 @@ import { BsGithub, BsLinkedin, BsDiscord, BsTwitter } from 'react-icons/bs'
 import ThemeSwitch from './ThemeSwitch'
 
 const Nav = () => {
+  const handleCloudBtn = () => {
+    if (window.location.pathname !== '/') {
+      localStorage.setItem('executeFunctionOnTargetPage', 'true')
+      window.location.href = '/'
+    } else {
+      window.scrollTo(0, document.body.scrollHeight)
+    }
+  }
+
   return (
     <>
       <nav
@@ -35,13 +40,6 @@ const Nav = () => {
             id="navbar-sticky"
           >
             <ul className="ml-4 mt-4 flex flex-col rounded-lg border border-white bg-white p-4 font-medium dark:bg-gray-950 md:mt-0 md:flex-row md:space-x-4 md:border-0 md:bg-white md:p-0 ">
-              {/*<li>
-                <div className="bg-white hidden md:flex md:gap-x-6">
-                  <Link href='/features' className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 dark:text-gray-100 hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-white">
-                    Features
-                  </Link>
-                </div>
-              </li>*/}
               <li>
                 <div className="hidden bg-white dark:bg-gray-950 md:flex md:gap-x-6">
                   <Link href="/blog">
@@ -54,10 +52,9 @@ const Nav = () => {
                   </Link>
                 </div>
               </li>
-              {/*
               <li>
                 <div className="hidden bg-white dark:bg-gray-950 md:flex md:gap-x-6">
-                  <Link href="https://docs.trainy.ai/">
+                  <Link href="https://llm-atc.readthedocs.io/en/latest">
                     <a
                       className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900 dark:text-gray-100 dark:hover:bg-darkThemeColor dark:hover:text-white"
                       aria-label="Docs"
@@ -67,7 +64,27 @@ const Nav = () => {
                   </Link>
                 </div>
               </li>
-              */}
+              <li>
+                <div className="hidden bg-white dark:bg-gray-950 md:flex md:gap-x-6">
+                  <button
+                    className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900 dark:text-gray-100 dark:hover:bg-darkThemeColor dark:hover:text-white"
+                    aria-label="Cloud"
+                    onClick={() => handleCloudBtn()}
+                  >
+                    Cloud
+                  </button>
+                  {/*
+                  <Link href="/get-started">
+                    <a
+                      className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900 dark:text-gray-100 dark:hover:bg-darkThemeColor dark:hover:text-white"
+                      aria-label="Cloud"
+                    >
+                      Cloud
+                    </a>
+                  </Link>
+                  */}
+                </div>
+              </li>
             </ul>
           </div>
         </div>

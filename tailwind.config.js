@@ -49,6 +49,7 @@ module.exports = {
         primary: colors.orange,
         gray: colors.neutral,
         logodark: '#DD5141',
+        logodark2: '#A6730E',
         logolight: '#EFB357',
         logomid: '#E6824C',
         logolightest: '#f7d8a8',

@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Footer() {
   return (
     <footer className="w-full bg-slate-50 dark:bg-darkThemeColor">
-      <div className="mx-auto w-full max-w-screen-xl p-4 md:py-8">
+      <div className="mx-auto w-full p-4 sm:w-5/6 md:w-3/4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a href="https://trainy.ai/" className="mb-4 flex items-center sm:mb-0">
             <div className="mr-1 flex items-center">
