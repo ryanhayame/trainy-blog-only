@@ -3,6 +3,8 @@ import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayout'
 import { PageSEO } from '@/components/SEO'
 import SectionContainer from '@/components/SectionContainer'
+import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
 
 export const POSTS_PER_PAGE = 5
 

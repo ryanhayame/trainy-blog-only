@@ -1,9 +1,16 @@
 import * as React from 'react'
 import Box from '@mui/material/Box'
+import Avatar from '@mui/material/Avatar'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
+import ListItemIcon from '@mui/material/ListItemIcon'
+import Divider from '@mui/material/Divider'
 import IconButton from '@mui/material/IconButton'
+import Typography from '@mui/material/Typography'
 import Tooltip from '@mui/material/Tooltip'
+import PersonAdd from '@mui/icons-material/PersonAdd'
+import Settings from '@mui/icons-material/Settings'
+import Logout from '@mui/icons-material/Logout'
 import Link from 'next/link'
 
 export default function NavMenu() {
@@ -15,21 +22,8 @@ export default function NavMenu() {
   const handleClose = () => {
     setAnchorEl(null)
   }
-
-  const handleCloudBtn = () => {
-    if (window.location.pathname !== '/') {
-      localStorage.setItem('executeFunctionOnTargetPage', 'true')
-      window.location.href = '/'
-    } else {
-      window.scrollTo(
-        0,
-        document.body.scrollHeight - 800 || document.documentElement.scrollHeight
-      ) - 800
-    }
-  }
-
   return (
-    <div className="block md:hidden">
+    <React.Fragment className="block md:hidden">
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
         <Tooltip>
           <IconButton
@@ -40,7 +34,7 @@ export default function NavMenu() {
             aria-controls={open ? 'account-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
-            className="inline-flex items-center rounded-lg p-2 text-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-800 md:hidden"
+            className="inline-flex items-center rounded-lg p-2 text-sm hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"
           >
             <svg
               className="block h-6 w-6 fill-gray-900 dark:fill-gray-100 md:hidden"
@@ -94,15 +88,14 @@ export default function NavMenu() {
             Blog
           </Link>
         </MenuItem>
+        {/*
         <MenuItem className="font-semibold">
-          <Link aria-label="Docs" href="https://llm-atc.readthedocs.io/en/latest">
+          <Link aria-label="Docs" href="https://docs.trainy.ai/">
             Docs
           </Link>
         </MenuItem>
-        <MenuItem onClick={() => handleCloudBtn()} className="font-semibold">
-          Cloud
-        </MenuItem>
+        */}
       </Menu>
-    </div>
+    </React.Fragment>
   )
 }
