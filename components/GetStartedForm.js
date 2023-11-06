@@ -14,7 +14,6 @@ const GetStartedForm = () => {
 
   const [error, setError] = useState({})
 
-  //eslint-disable-next-line
   const validEmail = (email) => {
     //eslint-disable-next-line
     var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
