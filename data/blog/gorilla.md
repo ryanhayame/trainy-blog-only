@@ -1,6 +1,6 @@
 ---
 title: 'Function Calling with Gorilla LLM'
-date: '2023-11-20'
+date: '2023-11-21'
 draft: false
 summary: Host your own function calling LLM.
 tags: [Serving, Function Calling]
