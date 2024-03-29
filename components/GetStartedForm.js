@@ -140,7 +140,7 @@ const GetStartedForm = () => {
           id="checkbox1"
           value={checkbox1}
           onChange={() => setCheckbox1((curr) => !curr)}
-          className={`h-4 w-4 w-full max-w-4xl rounded border-slate-400 bg-slate-100 text-logomid hover:border-gray-700 focus:border-gray-700 focus:ring-gray-700 dark:border-gray-600 dark:bg-gray-800 dark:checked:bg-logomid`}
+          className={`h-4 w-4 rounded border-slate-400 bg-slate-100 text-logomid hover:border-gray-700 focus:border-gray-700 focus:ring-gray-700 dark:border-gray-600 dark:bg-gray-800 dark:checked:bg-logomid`}
         ></input>
         <label className="ml-2 py-4 text-sm font-medium leading-4 text-gray-900 dark:text-gray-300">
           Interested in Trainy Platform
@@ -150,7 +150,7 @@ const GetStartedForm = () => {
           id="checkbox2"
           value={checkbox2}
           onChange={() => setCheckbox2((curr) => !curr)}
-          className={`ml-4 h-4 w-4 w-full max-w-4xl rounded border-slate-400 bg-slate-100 text-logomid hover:border-gray-700 focus:border-gray-700 focus:ring-gray-700 dark:border-gray-600 dark:bg-gray-800 dark:checked:bg-logomid xs:ml-10`}
+          className={`ml-4 h-4 w-4 rounded border-slate-400 bg-slate-100 text-logomid hover:border-gray-700 focus:border-gray-700 focus:ring-gray-700 dark:border-gray-600 dark:bg-gray-800 dark:checked:bg-logomid xs:ml-10`}
         ></input>
         <label className="ml-2 py-4 text-sm font-medium leading-4 text-gray-900 dark:text-gray-300">
           Interested in Trainy Cloud
@@ -158,7 +158,7 @@ const GetStartedForm = () => {
       </div>
       <button
         type="submit"
-        className="rounded-lg bg-black px-5 py-3 text-center text-base font-medium text-white drop-shadow-xl hover:bg-logomid dark:bg-logomid dark:hover:bg-logodark"
+        className="rounded-lg bg-black px-5 py-3 text-center text-base font-medium text-white drop-shadow-xl hover:bg-logomid dark:bg-logomid dark:hover:bg-logodark2"
       >
         Submit
       </button>

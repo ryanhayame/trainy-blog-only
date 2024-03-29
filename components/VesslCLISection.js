@@ -6,11 +6,9 @@ import { useState, useEffect } from 'react'
 const VesslCLISection = () => {
   const [selected, setSelected] = useState(1)
 
-  //fill-[#FEF5E8] dark:fill-[#342A17]
-
   return (
     <div
-      className="-mt-[90px] mb-8 w-full bg-slate-50 bg-[url('/cloudSVG.svg')] bg-top bg-no-repeat px-4 pt-[90px] dark:bg-darkThemeColor dark:bg-[url('/cloudSVGdark.svg')]"
+      className="-mt-[90px] mb-8 w-full bg-slate-50 bg-top bg-no-repeat px-4 pt-[90px] dark:bg-darkThemeColor xs:bg-none dark:xs:bg-none sm:bg-[url('/cloudSVG.svg')] dark:sm:bg-[url('/cloudSVGdark.svg')]"
       data-aos="fade-up"
       data-aos-duration="500"
       data-aos-delay="30"
@@ -39,7 +37,7 @@ const VesslCLISection = () => {
         </p>
       </div>
       <div className="flex flex-col justify-center gap-6 sm:flex-row md:gap-16">
-        <div className="hidden flex-col justify-between gap-2 sm:flex">
+        <div className="hidden flex-col justify-around gap-2 sm:flex">
           <div data-aos="fade-right" data-aos-delay="30">
             <button
               onClick={() => setSelected(1)}
@@ -61,7 +59,7 @@ const VesslCLISection = () => {
                   : 'border-transparent dark:shadow-gray-800'
               } hover:border-logolight hover:shadow-logolightest dark:hover:border-logodark2 dark:hover:shadow-logodark2`}
             >
-              2. Connect Data
+              2. Finetune
             </button>
           </div>
           <div data-aos="fade-right" data-aos-delay="90">
@@ -73,19 +71,7 @@ const VesslCLISection = () => {
                   : 'border-transparent dark:shadow-gray-800'
               } hover:border-logolight hover:shadow-logolightest dark:hover:border-logodark2 dark:hover:shadow-logodark2`}
             >
-              3. Finetune
-            </button>
-          </div>
-          <div data-aos="fade-right" data-aos-delay="120">
-            <button
-              onClick={() => setSelected(4)}
-              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm text-black shadow-lg dark:bg-gray-900 dark:text-gray-100 dark:shadow-md md:w-40 md:text-base ${
-                selected === 4
-                  ? 'border-logolight shadow-logolightest dark:border-logodark2 dark:shadow-logodark2'
-                  : 'border-transparent dark:shadow-gray-800'
-              } hover:border-logolight hover:shadow-logolightest dark:hover:border-logodark2 dark:hover:shadow-logodark2`}
-            >
-              4. Deploy
+              3. Deploy
             </button>
           </div>
         </div>
@@ -109,22 +95,16 @@ const VesslCLISection = () => {
               </svg>
             </button>
             <div className="text-center text-sm font-normal text-gray-900 dark:text-gray-100">
-              {selected === 1
-                ? '1. Select Cloud'
-                : selected === 2
-                ? '2. Connect Data'
-                : selected === 3
-                ? '3. Finetune'
-                : '4. Deploy'}
+              {selected === 1 ? '1. Select Cloud' : selected === 2 ? '2. Finetune' : '3. Deploy'}
             </div>
             <button
-              disabled={selected === 4}
+              disabled={selected === 3}
               onClick={() => setSelected((oldSelected) => oldSelected + 1)}
             >
               <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   className={`${
-                    selected === 4
+                    selected === 3
                       ? 'fill-gray-300 dark:fill-gray-600'
                       : 'fill-gray-400 dark:fill-gray-300'
                   } `}
@@ -213,17 +193,6 @@ const VesslCLISection = () => {
               <Image
                 className="mx-auto h-auto max-w-full rounded-xl dark:brightness-90"
                 src={easyPic}
-                width={540}
-                height={385}
-                alt="Features 02"
-              />
-            </div>
-          ) : null}
-          {selected === 4 ? (
-            <div className="flex w-full justify-center rounded-xl shadow-md shadow-gray-300 dark:shadow-gray-500">
-              <Image
-                className="mx-auto h-auto max-w-full rounded-xl dark:brightness-90"
-                src={powerfulPic}
                 width={540}
                 height={385}
                 alt="Features 02"
