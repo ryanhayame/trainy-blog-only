@@ -82,13 +82,6 @@ export default function Home({ posts }) {
         <FeaturesZigzag2 />
       </div>
 
-      <div
-        name="scroll-to-element3"
-        className="h-fit w-full justify-center bg-slate-50 py-32 shadow-inner dark:bg-darkThemeColor"
-      >
-        <CloudSection handleClick={handleClick} />
-      </div>
-
       {/*
       <div
         name="scroll-to-element1"

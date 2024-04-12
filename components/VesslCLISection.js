@@ -8,7 +8,7 @@ const VesslCLISection = () => {
 
   return (
     <div
-      className="-mt-[90px] mb-8 w-full bg-slate-50 bg-top bg-no-repeat px-4 pt-[90px] dark:bg-darkThemeColor xs:bg-none dark:xs:bg-none sm:bg-[url('/cloudSVG.svg')] dark:sm:bg-[url('/cloudSVGdark.svg')]"
+      className="-mt-[30px] mb-8 w-full bg-slate-50 bg-top bg-no-repeat px-4 pt-[90px] dark:bg-darkThemeColor xs:bg-none dark:xs:bg-none sm:bg-[url('/cloudSVG.svg')] dark:sm:bg-[url('/cloudSVGdark.svg')]"
       data-aos="fade-up"
       data-aos-duration="500"
       data-aos-delay="30"
@@ -41,7 +41,7 @@ const VesslCLISection = () => {
           <div data-aos="fade-right" data-aos-delay="30">
             <button
               onClick={() => setSelected(1)}
-              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm text-black shadow-lg dark:bg-gray-900 dark:text-gray-100 dark:shadow-md md:w-40 md:text-base ${
+              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm leading-tight text-black shadow-lg dark:bg-gray-900 dark:text-gray-100 dark:shadow-md md:w-44 md:text-[16px] ${
                 selected === 1
                   ? 'border-logolight shadow-logolightest dark:border-logodark2 dark:shadow-logodark2'
                   : 'border-transparent dark:shadow-gray-800'
@@ -53,25 +53,37 @@ const VesslCLISection = () => {
           <div data-aos="fade-right" data-aos-delay="60">
             <button
               onClick={() => setSelected(2)}
-              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm text-black shadow-lg dark:bg-gray-900 dark:text-gray-100 dark:shadow-md md:w-40 md:text-base ${
+              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm leading-tight text-black shadow-lg dark:bg-gray-900 dark:text-gray-100 dark:shadow-md md:w-44 md:text-[16px] ${
                 selected === 2
                   ? 'border-logolight shadow-logolightest dark:border-logodark2 dark:shadow-logodark2'
                   : 'border-transparent dark:shadow-gray-800'
               } hover:border-logolight hover:shadow-logolightest dark:hover:border-logodark2 dark:hover:shadow-logodark2`}
             >
-              2. Finetune
+              2. Specify Instance Types
             </button>
           </div>
           <div data-aos="fade-right" data-aos-delay="90">
             <button
               onClick={() => setSelected(3)}
-              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm text-black shadow-lg dark:bg-gray-900 dark:text-gray-100 dark:shadow-md md:w-40 md:text-base ${
+              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm leading-tight text-black shadow-lg dark:bg-gray-900 dark:text-gray-100 dark:shadow-md md:w-44 md:text-[16px] ${
                 selected === 3
                   ? 'border-logolight shadow-logolightest dark:border-logodark2 dark:shadow-logodark2'
                   : 'border-transparent dark:shadow-gray-800'
               } hover:border-logolight hover:shadow-logolightest dark:hover:border-logodark2 dark:hover:shadow-logodark2`}
             >
-              3. Deploy
+              3. Add Your Code
+            </button>
+          </div>
+          <div data-aos="fade-right" data-aos-delay="90">
+            <button
+              onClick={() => setSelected(4)}
+              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm leading-tight text-black shadow-lg dark:bg-gray-900 dark:text-gray-100 dark:shadow-md md:w-44 md:text-[16px] ${
+                selected === 4
+                  ? 'border-logolight shadow-logolightest dark:border-logodark2 dark:shadow-logodark2'
+                  : 'border-transparent dark:shadow-gray-800'
+              } hover:border-logolight hover:shadow-logolightest dark:hover:border-logodark2 dark:hover:shadow-logodark2`}
+            >
+              4. Launch
             </button>
           </div>
         </div>
@@ -167,36 +179,128 @@ const VesslCLISection = () => {
             </svg>
           </div>
           {selected === 1 ? (
-            <div className="flex w-full justify-center rounded-xl shadow-md shadow-gray-300 dark:shadow-gray-500">
-              <Image
-                className="mx-auto h-auto max-w-full rounded-xl dark:brightness-90"
-                src={easyPic}
-                width={540}
-                height={385}
-                alt="Features 02"
-              />
+            <div className="flex h-[540px] w-[520px] flex-col rounded-xl bg-slate-900 p-4 leading-tight ">
+              <div className="mb-4 flex flex-row">
+                <div className="m-2 h-4 w-4 rounded-full bg-[#FF605C]"></div>
+                <div className="m-2 h-4 w-4 rounded-full bg-[#FFBD44]"></div>
+                <div className="m-2 h-4 w-4 rounded-full bg-[#00CA4E]"></div>
+              </div>
+              <div className="flex w-full flex-col rounded-xl bg-slate-900 px-4">
+                <p className="text-gray-200 dark:text-gray-300">name: torch-ddp-bench</p>
+                <br></br>
+                <p className="text-gray-200 dark:text-gray-300">
+                  resources:
+                  <p className="ml-4 text-gray-200 dark:text-gray-300">cloud: gcp</p>
+                </p>
+              </div>
             </div>
           ) : null}
           {selected === 2 ? (
-            <div className="flex w-full justify-center rounded-xl shadow-md shadow-gray-300 dark:shadow-gray-500">
-              <Image
-                className="mx-auto h-auto max-w-full rounded-xl dark:brightness-90"
-                src={powerfulPic}
-                width={540}
-                height={385}
-                alt="Features 02"
-              />
+            <div className="flex h-[540px] w-[520px] flex-col rounded-xl bg-slate-900 p-4 leading-tight">
+              <div className="mb-4 flex flex-row">
+                <div className="m-2 h-4 w-4 rounded-full bg-[#FF605C]"></div>
+                <div className="m-2 h-4 w-4 rounded-full bg-[#FFBD44]"></div>
+                <div className="m-2 h-4 w-4 rounded-full bg-[#00CA4E]"></div>
+              </div>
+              <div className="flex w-full flex-col rounded-xl bg-slate-900 px-4">
+                <p className="text-gray-200 dark:text-gray-300">name: torch-ddp-bench</p>
+                <br></br>
+                <p className="text-gray-200 dark:text-gray-300">num_nodes: 2</p>
+                <br></br>
+                <p className="text-gray-200 dark:text-gray-300">
+                  resources:
+                  <p className="ml-4 text-gray-200 dark:text-gray-300">accelerators: H100:8</p>
+                  <p className="ml-4 text-gray-200 dark:text-gray-300">use_spot: True</p>
+                  <p className="ml-4 text-gray-200 dark:text-gray-300">cloud: gcp</p>
+                </p>
+              </div>
             </div>
           ) : null}
           {selected === 3 ? (
-            <div className="flex w-full justify-center rounded-xl shadow-md shadow-gray-300 dark:shadow-gray-500">
-              <Image
-                className="mx-auto h-auto max-w-full rounded-xl dark:brightness-90"
-                src={easyPic}
-                width={540}
-                height={385}
-                alt="Features 02"
-              />
+            <div className="flex h-[540px] w-[520px] flex-col rounded-xl bg-slate-900 p-4 leading-tight">
+              <div className="mb-4 flex flex-row">
+                <div className="m-2 h-4 w-4 rounded-full bg-[#FF605C]"></div>
+                <div className="m-2 h-4 w-4 rounded-full bg-[#FFBD44]"></div>
+                <div className="m-2 h-4 w-4 rounded-full bg-[#00CA4E]"></div>
+              </div>
+              <div className="flex w-full flex-col rounded-xl bg-slate-900 px-4">
+                <p className="text-gray-200 dark:text-gray-300">name: torch-ddp-bench</p>
+                <br></br>
+                <p className="text-gray-200 dark:text-gray-300">num_nodes: 2</p>
+                <br></br>
+                <p className="text-gray-200 dark:text-gray-300">
+                  resources:
+                  <p className="ml-4 text-gray-200 dark:text-gray-300">accelerators: H100:8</p>
+                  <p className="ml-4 text-gray-200 dark:text-gray-300">use_spot: True</p>
+                  <p className="ml-4 text-gray-200 dark:text-gray-300">cloud: gcp</p>
+                </p>
+                <br></br>
+                <p className="text-gray-200 dark:text-gray-300">
+                  file_mounts:
+                  <p className="ml-4 text-gray-200 dark:text-gray-300">
+                    ./torch_ddp_benchmark.py: ./examples/torch_ddp_benchmark.py
+                  </p>
+                </p>
+                <br></br>
+                <p className="text-gray-200 dark:text-gray-300">
+                  setup: |
+                  <p className="ml-4 text-gray-200 dark:text-gray-300">
+                    pip install torch torchvision
+                  </p>
+                </p>
+              </div>
+            </div>
+          ) : null}
+          {selected === 4 ? (
+            <div className="flex h-[540px] w-[520px] flex-col rounded-xl bg-slate-900 p-4 leading-tight">
+              <div className="mb-4 flex flex-row">
+                <div className="m-2 h-4 w-4 rounded-full bg-[#FF605C]"></div>
+                <div className="m-2 h-4 w-4 rounded-full bg-[#FFBD44]"></div>
+                <div className="m-2 h-4 w-4 rounded-full bg-[#00CA4E]"></div>
+              </div>
+              <div className="flex w-full flex-col rounded-xl bg-slate-900 px-4">
+                <p className="text-gray-200 dark:text-gray-300">name: torch-ddp-bench</p>
+                <br></br>
+                <p className="text-gray-200 dark:text-gray-300">num_nodes: 2</p>
+                <br></br>
+                <p className="text-gray-200 dark:text-gray-300">
+                  resources:
+                  <p className="ml-4 text-gray-200 dark:text-gray-300">accelerators: H100:8</p>
+                  <p className="ml-4 text-gray-200 dark:text-gray-300">use_spot: True</p>
+                  <p className="ml-4 text-gray-200 dark:text-gray-300">cloud: gcp</p>
+                </p>
+                <br></br>
+                <p className="text-gray-200 dark:text-gray-300">
+                  file_mounts:
+                  <p className="ml-4 text-gray-200 dark:text-gray-300">
+                    ./torch_ddp_benchmark.py: ./examples/torch_ddp_benchmark.py
+                  </p>
+                </p>
+                <br></br>
+                <p className="text-gray-200 dark:text-gray-300">
+                  setup: |
+                  <p className="ml-4 text-gray-200 dark:text-gray-300">
+                    pip install torch torchvision
+                  </p>
+                </p>
+                <br></br>
+                <p className="text-gray-200 dark:text-gray-300">
+                  run: |
+                  <p className="ml-4 text-gray-200 dark:text-gray-300">
+                    torchrun \
+                    <p className="ml-8 text-gray-200 dark:text-gray-300">--nproc_per_node 8 \</p>
+                    <p className="ml-8 text-gray-200 dark:text-gray-300">
+                      --rdzv_id=1 --rdzv_endpoint=${'master_addr'}:1234 \
+                    </p>
+                    <p className="ml-8 text-gray-200 dark:text-gray-300">
+                      --rdzv_backend=c10d --nnodes $num_nodes \
+                    </p>
+                    <p className="ml-8 text-gray-200 dark:text-gray-300">
+                      torch_ddp_benchmark.py --distributed-backend nccl
+                    </p>
+                  </p>
+                </p>
+              </div>
             </div>
           ) : null}
         </div>
