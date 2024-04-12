@@ -35,7 +35,7 @@ const HeaderSection = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="150"
-            className="mx-4 mt-4 max-w-3xl text-center text-lg text-gray-700 dark:text-gray-300 xs:mt-10 lg:text-2xl"
+            className="mx-4 mt-4 min-h-[56px] max-w-3xl text-center text-lg text-gray-700 dark:text-gray-300 xs:mt-10 lg:text-2xl"
           >
             We help teams
             <span>
@@ -58,7 +58,7 @@ const HeaderSection = () => {
             AI models, effortlessly.
           </p>
         </div>
-        <div className="mt-12 flex flex-col items-center justify-center">
+        <div className="mt-6 flex flex-col items-center justify-center">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -66,7 +66,7 @@ const HeaderSection = () => {
             aria-label="Get Started Page"
             data-aos="fade-up"
             data-aos-delay="150"
-            className="inline-flex cursor-pointer items-center justify-center rounded-lg bg-black px-5 py-3 text-center text-base font-medium text-white drop-shadow-xl hover:bg-logomid dark:bg-logomid dark:hover:bg-logodark2"
+            className="inline-flex cursor-pointer items-center justify-center rounded-lg bg-black px-5 py-3 text-center text-base font-medium text-white drop-shadow-xl hover:bg-logomid dark:bg-logomid2 dark:hover:bg-logomid"
           >
             Learn More
             <svg
