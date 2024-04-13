@@ -20,17 +20,17 @@ const HeaderSection = () => {
             data-aos-delay="100"
             className="text-center text-4xl font-extrabold text-gray-900 dark:text-gray-100 xs:text-5xl md:text-6xl lg:text-7xl"
           >
-            Fully Managed
+            Managed Infrastructure
           </h1>
           <h1
             data-aos="fade-up"
             data-aos-delay="100"
             className="text-center text-4xl font-extrabold text-gray-900 dark:text-gray-100 xs:text-5xl md:text-6xl lg:text-7xl"
           >
+            For{' '}
             <span className="bg-gradient-to-r from-logodark to-logolight bg-clip-text text-transparent">
-              AI Infrastructure
-            </span>{' '}
-            For All
+              Generative AI
+            </span>
           </h1>
           <p
             data-aos="fade-up"
@@ -44,9 +44,9 @@ const HeaderSection = () => {
                   // Same substring at the start will only be typed out once, initially
                   ' train',
                   1000, // wait 1s before replacing "Mice" with "Hamsters"
-                  ' optimize',
-                  1000,
                   ' scale',
+                  1000,
+                  ' accelerate',
                   1000,
                 ]}
                 wrapper="span"
@@ -68,7 +68,7 @@ const HeaderSection = () => {
             data-aos-delay="150"
             className="inline-flex cursor-pointer items-center justify-center rounded-lg bg-black px-5 py-3 text-center text-base font-medium text-white drop-shadow-xl hover:bg-logomid dark:bg-logomid2 dark:hover:bg-logomid"
           >
-            Learn More
+            Join Waitlist
             <svg
               className="-mr-1 ml-2 h-5 w-5"
               fill="currentColor"

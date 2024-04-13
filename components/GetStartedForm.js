@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
 
-//import { useNavigate } from "react-router-dom";
-
 const GetStartedForm = () => {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
   const [companyName, setCompanyName] = useState('')
   const [jobTitle, setJobTitle] = useState('')
-  const [phoneNumber, setPhoneNumber] = useState('')
+  const [extra, setExtra] = useState('')
   const [checkbox1, setCheckbox1] = useState(false)
   const [checkbox2, setCheckbox2] = useState(false)
 
@@ -38,7 +36,13 @@ const GetStartedForm = () => {
     // POST API request to mongoDB
     const userData = {
       firstName: firstName,
+      lastName: lastName,
       email: email.toLowerCase(),
+      companyName: companyName,
+      jobTitle: jobTitle,
+      extra: extra,
+      trainyPlatform: checkbox1,
+      performaceTuningConsulation: checkbox2,
     }
 
     const response = null
@@ -54,7 +58,6 @@ const GetStartedForm = () => {
     }
 
     // if everything was successful
-    //navigate('/')
   }
 
   return (
@@ -124,13 +127,13 @@ const GetStartedForm = () => {
       </div>
       <div className="flex w-5/6 max-w-4xl flex-col justify-center">
         <label className="mb-1 text-left text-sm font-medium text-gray-800  dark:text-gray-300">
-          Phone Number:
+          Anything else we should know? (cloud vs. on-prem, number of nodes, model size, etc.)
         </label>
         <input
           type="text"
-          id="phoneNumber"
-          value={phoneNumber}
-          onChange={(e) => setPhoneNumber(e.target.value)}
+          id="extra"
+          value={extra}
+          onChange={(e) => setExtra(e.target.value)}
           className="w-full max-w-4xl rounded border-slate-400 bg-slate-100 hover:border-gray-700 focus:border-gray-700 focus:ring-gray-700  dark:border-gray-600 dark:bg-gray-800"
         ></input>
       </div>
@@ -153,12 +156,12 @@ const GetStartedForm = () => {
           className={`ml-4 h-4 w-4 rounded border-slate-400 bg-slate-100 text-logomid hover:border-gray-700 focus:border-gray-700 focus:ring-gray-700 dark:border-gray-600 dark:bg-gray-800 dark:checked:bg-logomid xs:ml-10`}
         ></input>
         <label className="ml-2 py-4 text-sm font-medium leading-4 text-gray-900 dark:text-gray-300">
-          Interested in Trainy Cloud
+          Interested in Performance Tuning Consultation
         </label>
       </div>
       <button
         type="submit"
-        className="rounded-lg bg-black px-5 py-3 text-center text-base font-medium text-white drop-shadow-xl hover:bg-logomid dark:bg-logomid dark:hover:bg-logodark2"
+        className="rounded-lg bg-black px-5 py-3 text-center text-base font-medium text-white drop-shadow-xl hover:bg-logomid dark:bg-logomid2 dark:hover:bg-logomid"
       >
         Submit
       </button>

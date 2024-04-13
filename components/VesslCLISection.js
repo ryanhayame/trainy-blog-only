@@ -18,22 +18,29 @@ const VesslCLISection = () => {
           data-aos="fade-up"
           data-aos-delay="30"
         >
-          Trainy Cloud
+          Trainy Platform
         </h2>
-        <p
-          className="mt-2 pb-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-6xl"
-          data-aos="fade-up"
-          data-aos-delay="60"
-        >
-          Trainy Cloud
-        </p>
-        <p
-          className="mt-2 pb-4 text-lg tracking-tight text-gray-700 dark:text-gray-300"
-          data-aos="fade-up"
-          data-aos-delay="90"
-        >
-          Trainy Cloud
-        </p>
+        <div className="md:w-[780px]">
+          <p
+            className="mt-2 pb-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-6xl"
+            data-aos="fade-up"
+            data-aos-delay="60"
+          >
+            Launch Jobs and Scale Up on your Infrastructure
+          </p>
+        </div>
+        <div className="md:w-[750px]">
+          <p
+            className="mt-2 pb-4 text-lg tracking-tight text-gray-700 dark:text-gray-300"
+            data-aos="fade-up"
+            data-aos-delay="90"
+          >
+            Our managed K8s platform uses
+            <a href="https://skypilot.readthedocs.io/en/latest/docs/index.html"> SkyPilot</a> as a
+            job submission frontend, meaning its never been easier to spin up machines and launch
+            training jobs on ANY cloud or on-prem.
+          </p>
+        </div>
       </div>
       <div className="flex flex-col justify-center gap-6 sm:flex-row md:gap-16">
         <div className="hidden flex-col justify-around gap-2 sm:flex">
@@ -197,7 +204,7 @@ const VesslCLISection = () => {
                 <br></br>
                 <p className="text-gray-200 dark:text-gray-300">
                   resources:
-                  <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">cloud: gcp</p>
+                  <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">cloud: kubernetes</p>
                 </p>
               </div>
             </div>
@@ -220,7 +227,7 @@ const VesslCLISection = () => {
                     accelerators: H100:8
                   </p>
                   <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">use_spot: True</p>
-                  <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">cloud: gcp</p>
+                  <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">cloud: kubernetes</p>
                 </p>
               </div>
             </div>
@@ -243,7 +250,7 @@ const VesslCLISection = () => {
                     accelerators: H100:8
                   </p>
                   <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">use_spot: True</p>
-                  <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">cloud: gcp</p>
+                  <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">cloud: kubernetes</p>
                 </p>
                 <br></br>
                 <p className="text-gray-200 dark:text-gray-300">
@@ -280,7 +287,7 @@ const VesslCLISection = () => {
                     accelerators: H100:8
                   </p>
                   <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">use_spot: True</p>
-                  <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">cloud: gcp</p>
+                  <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">cloud: kubernetes</p>
                 </p>
                 <br></br>
                 <p className="text-gray-200 dark:text-gray-300">
