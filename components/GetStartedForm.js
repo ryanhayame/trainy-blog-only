@@ -124,7 +124,7 @@ const GetStartedForm = () => {
       </div>
       <div className="flex w-5/6 max-w-4xl flex-col justify-center">
         <label className="mb-1 text-left text-sm font-medium text-gray-800  dark:text-gray-300">
-          Phone Number:
+          Anything else we should know? (cloud vs. on-prem, number of nodes, model size, etc.)
         </label>
         <input
           type="text"
@@ -153,7 +153,7 @@ const GetStartedForm = () => {
           className={`ml-4 h-4 w-4 rounded border-slate-400 bg-slate-100 text-logomid hover:border-gray-700 focus:border-gray-700 focus:ring-gray-700 dark:border-gray-600 dark:bg-gray-800 dark:checked:bg-logomid xs:ml-10`}
         ></input>
         <label className="ml-2 py-4 text-sm font-medium leading-4 text-gray-900 dark:text-gray-300">
-          Interested in Trainy Cloud
+          Interested in Performance Tuning Consultation
         </label>
       </div>
       <button

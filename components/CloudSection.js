@@ -7,21 +7,21 @@ const CloudSection = () => {
           data-aos="fade-up"
           data-aos-delay="30"
         >
-          Trainy Cloud
+          Trainy Platform
         </h2>
         <p
           className="mt-2 pb-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-6xl"
           data-aos="fade-up"
           data-aos-delay="60"
         >
-          Trainy Cloud
+          Interested?
         </p>
         <p
           className="mt-2 text-lg tracking-tight text-gray-700 dark:text-gray-300"
           data-aos="fade-up"
           data-aos-delay="90"
         >
-          Access Nvidia A100s and H100s through the Trainy platform
+          We'd love to learn more about what you're building and how we can help.
         </p>
         <div className="mt-12 flex flex-col items-center justify-center">
           <a

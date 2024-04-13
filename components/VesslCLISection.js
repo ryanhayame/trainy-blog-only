@@ -19,21 +19,24 @@ const VesslCLISection = () => {
           data-aos="fade-up"
           data-aos-delay="30"
         >
-          Trainy Cloud
+          Trainy Platform
         </h2>
         <p
           className="mt-2 pb-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-6xl"
           data-aos="fade-up"
           data-aos-delay="60"
         >
-          Trainy Cloud
+          Launch Jobs and Scale Up <br></br>on your Infrastructure
         </p>
         <p
           className="mt-2 pb-4 text-lg tracking-tight text-gray-700 dark:text-gray-300"
           data-aos="fade-up"
           data-aos-delay="90"
         >
-          Trainy Cloud
+          Our managed K8s platform uses
+          <a href="https://skypilot.readthedocs.io/en/latest/docs/index.html"> SkyPilot</a> as a job
+          submission frontend, <br></br>meaning its never been easier to spin up machines and launch
+          training jobs on ANY cloud or on-prem.
         </p>
       </div>
       <div className="flex flex-col justify-center gap-6 sm:flex-row md:gap-16">
