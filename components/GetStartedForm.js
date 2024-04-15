@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import HeyForm2 from './HeyForm2'
 
 const GetStartedForm = () => {
   const [firstName, setFirstName] = useState('')
@@ -60,7 +61,8 @@ const GetStartedForm = () => {
     // if everything was successful
   }
 
-  return (
+  {
+    /* 
     <form
       onSubmit={handleSubmit}
       className="mt-8 flex w-full flex-col items-center justify-center gap-6"
@@ -166,7 +168,10 @@ const GetStartedForm = () => {
         Submit
       </button>
     </form>
-  )
+  */
+  }
+
+  return <HeyForm2 />
 }
 
 export default GetStartedForm

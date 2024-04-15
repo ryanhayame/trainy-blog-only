@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 
 import { TypeAnimation } from 'react-type-animation'
+import Image from 'next/image'
 
 const HeaderSection = () => {
   const [mounted, setMounted] = useState(false)
@@ -13,7 +14,7 @@ const HeaderSection = () => {
 
   return (
     <div className="flex min-h-small w-full items-center justify-center bg-white py-12 dark:bg-gray-900 xs:h-screen md:py-24">
-      <div className="mx-2 flex h-screen flex-col items-center justify-center justify-items-center pt-0 xs:py-24">
+      <div className="container mx-2 flex h-screen w-full flex-col items-center justify-center justify-items-center pb-16 pt-44 sm:py-44">
         <div className="flex max-w-4xl flex-col items-center justify-center">
           <h1
             data-aos="fade-up"
@@ -58,7 +59,7 @@ const HeaderSection = () => {
             AI models, effortlessly.
           </p>
         </div>
-        <div className="mt-6 flex flex-col items-center justify-center">
+        <div className="mb-[30vh] mt-6 flex flex-col items-center justify-center">
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -83,35 +84,150 @@ const HeaderSection = () => {
             </svg>
           </a>
         </div>
-        <div className="container mx-2 mb-8 mt-8 h-1/5 flex-col items-center justify-center xs:mt-44">
-          <div className="flex flex-col items-center justify-center">
-            <p
-              data-aos="fade-up"
-              data-aos-delay="200"
-              className="text-xl font-medium text-black dark:text-gray-100"
-            >
-              Backed By
-            </p>
-            <div className="flex items-center justify-center">
-              {mounted && (theme === 'dark' || resolvedTheme === 'dark') ? (
-                <img
+        <div className="flex-col items-center">
+          {mounted && (theme === 'dark' || resolvedTheme === 'dark') ? (
+            <div className="flex w-full flex-col justify-center lg:flex-row lg:divide-x-2">
+              <div className="w-100 flex flex-col justify-center sm:w-[500px]">
+                <p
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  className="text-center text-xl font-medium text-black dark:text-gray-100"
+                >
+                  Backed By
+                </p>
+                <div
+                  className="flex justify-between gap-2 pr-0 sm:gap-6 lg:pr-7"
                   data-aos="fade-up"
                   data-aos-delay="250"
-                  src="yc2.svg"
-                  className="mx-4 mt-2 h-10"
-                  alt="White Y Combinator Logo"
-                />
-              ) : (
-                <img
+                >
+                  <Image
+                    src="/yc2.svg"
+                    alt="Y Combinator Logo for Dark Mode"
+                    width={180}
+                    height={30}
+                  />
+                  <Image
+                    src="/zventure2.svg"
+                    alt="Z Venture Capital Logo for Dark Mode"
+                    width={220}
+                    height={30}
+                  />
+                  <Image
+                    src="/lynett2.svg"
+                    alt="Lynett Capital Logo for Dark Mode"
+                    width={75}
+                    height={95}
+                  />
+                </div>
+              </div>
+
+              <div className="w-100 flex flex-col justify-center sm:w-[500px]">
+                <p
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  className="text-center text-xl font-medium text-black dark:text-gray-100"
+                >
+                  Trusted By
+                </p>
+                <div
+                  className="flex justify-between gap-2 pl-0 sm:gap-6 lg:pl-8"
                   data-aos="fade-up"
                   data-aos-delay="250"
-                  src="yc.svg"
-                  className="mx-4 mt-2 h-10"
-                  alt="Black Y Combinator Logo"
-                />
-              )}
+                >
+                  <Image
+                    src="/digitalocean.svg"
+                    alt="Digital Ocean Logo for Dark Mode"
+                    width={180}
+                    height={40}
+                  />
+                  <Image
+                    src="/diffuse2.png"
+                    alt="Diffuse Bio Logo for Dark Mode"
+                    width={160}
+                    height={90}
+                    style={{ marginTop: '3px' }}
+                  />
+                  <Image
+                    src="/paperspace2.svg"
+                    alt="Paperspace Logo for Dark Mode"
+                    width={70}
+                    height={80}
+                  />
+                </div>
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="flex w-full flex-col justify-center lg:flex-row lg:divide-x-2">
+              <div className="w-100 flex flex-col justify-center sm:w-[500px]">
+                <p
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  className="text-center text-xl font-medium text-black dark:text-gray-100"
+                >
+                  Backed By
+                </p>
+                <div
+                  className="flex justify-between gap-2 pr-0 sm:gap-6 lg:pr-7"
+                  data-aos="fade-up"
+                  data-aos-delay="250"
+                >
+                  <Image
+                    src="/yc.svg"
+                    alt="Y Combinator Logo for Light Mode"
+                    width={180}
+                    height={30}
+                  />
+                  <Image
+                    src="/zventure.svg"
+                    alt="Z Venture Capital Logo for Light Mode"
+                    width={220}
+                    height={30}
+                  />
+                  <Image
+                    src="/lynett.svg"
+                    alt="Lynett Capital Logo for Light Mode"
+                    width={75}
+                    height={95}
+                  />
+                </div>
+              </div>
+
+              <div className="w-100 flex flex-col justify-center sm:w-[500px]">
+                <p
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  className="text-center text-xl font-medium text-black dark:text-gray-100"
+                >
+                  Trusted By
+                </p>
+                <div
+                  className="flex justify-between gap-2 pl-0 sm:gap-6 lg:pl-8"
+                  data-aos="fade-up"
+                  data-aos-delay="250"
+                >
+                  <Image
+                    src="/digitalocean.svg"
+                    alt="Digital Ocean Logo for Light Mode"
+                    width={180}
+                    height={40}
+                  />
+                  <Image
+                    src="/diffuse.png"
+                    alt="Diffuse Bio Logo for Light Mode"
+                    width={160}
+                    height={90}
+                    style={{ marginTop: '3px' }}
+                  />
+                  <Image
+                    src="/paperspace.svg"
+                    alt="Paperspace Logo for Light Mode"
+                    width={70}
+                    height={80}
+                  />
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
