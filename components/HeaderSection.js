@@ -59,7 +59,7 @@ const HeaderSection = () => {
             AI models, effortlessly.
           </p>
         </div>
-        <div className="mb-[30vh] mt-6 flex flex-col items-center justify-center">
+        <div className="mb-[20vh] mt-6 flex flex-col items-center justify-center sm:mb-[30vh]">
           <a
             target="_blank"
             rel="noopener noreferrer"

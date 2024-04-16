@@ -5,7 +5,6 @@ import Image from 'next/image'
 import easyPic from 'public/easy.png'
 import powerfulPic from 'public/powerful.png'
 import deepopsPic from 'public/deepops.png'
-import Zoom from 'next-image-zoom'
 import { useState } from 'react'
 
 function FeaturesZigzag2(props) {
