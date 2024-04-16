@@ -10,6 +10,7 @@ const HeaderSection = () => {
   const { theme, setTheme, resolvedTheme } = useTheme()
 
   // When mounted on client, now we can show the UI
+  // up to date marker
   useEffect(() => setMounted(true), [])
 
   return (
