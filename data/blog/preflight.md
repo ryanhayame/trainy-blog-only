@@ -1,6 +1,6 @@
 ---
 title: 'GPU Fabric Preflight Checks for MultiNode Training'
-date: '2024-06-06'
+date: '2024-06-07'
 draft: false
 summary: Run these benchmarks before training on multiple machines
 tags: [Training]
