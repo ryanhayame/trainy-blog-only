@@ -52,9 +52,9 @@ const Nav = () => {
                   </Link>
                 </div>
               </li>
-              {/* <li>
+              <li>
                 <div className="hidden bg-white dark:bg-gray-950 md:flex md:gap-x-6">
-                  <Link href="https://llm-atc.readthedocs.io/en/latest">
+                  <Link href="https://konduktor.readthedocs.io/en/latest/">
                     <a
                       className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900 dark:text-gray-100 dark:hover:bg-darkThemeColor dark:hover:text-white"
                       aria-label="Docs"
@@ -64,6 +64,7 @@ const Nav = () => {
                   </Link>
                 </div>
               </li>
+              {/*
               <li>
                 <div className="hidden bg-white dark:bg-gray-950 md:flex md:gap-x-6">
                   <button

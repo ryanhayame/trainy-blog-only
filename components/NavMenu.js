@@ -94,12 +94,12 @@ export default function NavMenu() {
             Blog
           </Link>
         </MenuItem>
-        {/*
         <MenuItem className="font-semibold">
-          <Link aria-label="Docs" href="https://llm-atc.readthedocs.io/en/latest">
+          <Link aria-label="Docs" href="https://konduktor.readthedocs.io/en/latest/">
             Docs
           </Link>
         </MenuItem>
+        {/*
         <MenuItem onClick={() => handleCloudBtn()} className="font-semibold">
           Cloud
         </MenuItem>
