@@ -1,6 +1,6 @@
 ---
 title: 'Zero Instrumentation GPU Metrics with DCGM on Trainy: Konduktor'
-date: '2024-06-14'
+date: '2024-06-15'
 draft: false
 summary: Monitor your GPU Clusters with Metrics
 tags: [Training, Clusters, GPUs]
