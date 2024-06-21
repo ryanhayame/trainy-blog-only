@@ -5,7 +5,7 @@ draft: false
 summary: Run these benchmarks before training on multiple machines
 tags: [Training]
 canonicalUrl: preflight
-authors: ['default']
+authors: ['grace']
 ---
 
 Given the scale of modern LLMs, GPU network fabric is one of the most important factor for your training speed. The ability to efficiently communicate across hundreds of nodes allows you to maximize GPU utilization and explore more complex training parallelisms such as in [Deepspeed](https://www.deepspeed.ai/) or [Fully Sharded Data Parallel](https://pytorch.org/docs/stable/fsdp.html). These critically rely on high performance networking solutions requiring specialized hardware and software like Infiniband or RDMA over Converged Ethernet (RoCE) with current vendor options often going up to now 3200 Gbps.
