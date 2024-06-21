@@ -3,7 +3,7 @@ name: Grace Boyle
 avatar: /static/images/grace.jpg
 occupation: Technical Writer
 company: Trainy
-linkedin: https://www.linkedin.com/sparrowhawk
+linkedin: https://www.linkedin.com/in/boylegrace/
 ---
 
 At birth, Ged was given the child-name Duny by his mother. He was born on the island of Gont, as a son of a bronzesmith. His mother died before he reached the age of one. As a small boy, Ged had overheard the village witch, his maternal aunt, using various words of power to call goats. Ged later used the words without an understanding of their meanings, to surprising effect.
