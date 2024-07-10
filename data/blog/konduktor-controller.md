@@ -1,8 +1,8 @@
 ---
-title: 'Automatic GPU Node Health and Pod scheduling'
-date: '2024-07-10'
+title: 'Automatic GPU Node Health and Pod Scheduling'
+date: '2024-07-11'
 draft: false
-summary: Automatically isolate faulty nodes and schedule only on healthy ones
+summary: Automatically isolate faulty nodes and schedule only on healthy ones.
 tags: [Cluster, Cluster-Management, GPUs, Logging, Metrics]
 canonicalUrl: controller
 authors: ['default']
