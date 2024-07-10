@@ -17,6 +17,7 @@ When minimizing spend on GPU compute, a question that always comes up is how are
 While GPU stats such as power and utilization can show if your GPUs have something scheduled on them, finer-grained metrics such as [streaming multiprocessor (SM) activity](https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html) tells you if the GPU is being efficiently used. SM activity (SM efficiency in the [PyTorch Profiler](https://pytorch.org/blog/pytorch-profiler-1.9-released/)) expresses the fraction of SMs that are active in an interval at a given time. An A100 GPU for example is composed of 128 SMs. To illustrate the shortcomings of GPU utilization, if we have a kernel that continuously runs for 10 seconds but only uses one 1 SM, on an A100, this would register 100% utilization, but the SM efficiency would be 1 / 128 = 0.7%. For a real example, we show an example from using [PyTorch Profiler](https://pytorch.org/tutorials/recipes/recipes/profiler_recipe.html) of a softmax kernel that registered 100% utilization but only ~20% SM activity.
 
 ![img](/static/images/1/profiler_tool.png 'Softmax_Profiled')
+<br/>
 
 # GPU Metrics with DCGM and Konduktor
 
