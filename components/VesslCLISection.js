@@ -28,7 +28,7 @@ const VesslCLISection = () => {
             data-aos="fade-up"
             data-aos-delay="90"
           >
-            Launch jobs and scale up without changing code
+            Launch jobs and scale up with 0 code changes
           </p>
         </div>
         {/*

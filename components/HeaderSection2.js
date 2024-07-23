@@ -108,18 +108,26 @@ const HeaderSection = () => {
                     alt="Y Combinator Logo for Dark Mode"
                     width={180}
                     height={30}
+                    onClick={() =>
+                      window.open('https://www.ycombinator.com/companies/trainy', '_blank')
+                    }
+                    style={{ cursor: 'pointer' }}
                   />
                   <Image
                     src="/zventure2.svg"
                     alt="Z Venture Capital Logo for Dark Mode"
                     width={220}
                     height={30}
+                    onClick={() => window.open('https://zvc.vc/en/', '_blank')}
+                    style={{ cursor: 'pointer' }}
                   />
                   <Image
                     src="/lynett2.svg"
                     alt="Lynett Capital Logo for Dark Mode"
                     width={75}
                     height={95}
+                    onClick={() => window.open('https://www.lynettcapital.com/', '_blank')}
+                    style={{ cursor: 'pointer' }}
                   />
                 </div>
               </div>
@@ -142,19 +150,24 @@ const HeaderSection = () => {
                     alt="Digital Ocean Logo for Dark Mode"
                     width={180}
                     height={40}
+                    onClick={() => window.open('https://www.digitalocean.com/', '_blank')}
+                    style={{ cursor: 'pointer' }}
                   />
                   <Image
                     src="/diffuse2.png"
                     alt="Diffuse Bio Logo for Dark Mode"
                     width={160}
                     height={90}
-                    style={{ marginTop: '3px' }}
+                    style={{ marginTop: '3px', cursor: 'pointer' }}
+                    onClick={() => window.open('https://diffuse.bio/', '_blank')}
                   />
                   <Image
                     src="/paperspace2.svg"
                     alt="Paperspace Logo for Dark Mode"
                     width={70}
                     height={80}
+                    onClick={() => window.open('https://www.paperspace.com/', '_blank')}
+                    style={{ cursor: 'pointer' }}
                   />
                 </div>
               </div>
@@ -179,18 +192,26 @@ const HeaderSection = () => {
                     alt="Y Combinator Logo for Light Mode"
                     width={180}
                     height={30}
+                    onClick={() =>
+                      window.open('https://www.ycombinator.com/companies/trainy', '_blank')
+                    }
+                    style={{ cursor: 'pointer' }}
                   />
                   <Image
                     src="/zventure.svg"
                     alt="Z Venture Capital Logo for Light Mode"
                     width={220}
                     height={30}
+                    onClick={() => window.open('https://zvc.vc/en/', '_blank')}
+                    style={{ cursor: 'pointer' }}
                   />
                   <Image
                     src="/lynett.svg"
                     alt="Lynett Capital Logo for Light Mode"
                     width={75}
                     height={95}
+                    onClick={() => window.open('https://www.lynettcapital.com/', '_blank')}
+                    style={{ cursor: 'pointer' }}
                   />
                 </div>
               </div>
@@ -213,19 +234,24 @@ const HeaderSection = () => {
                     alt="Digital Ocean Logo for Light Mode"
                     width={180}
                     height={40}
+                    onClick={() => window.open('https://www.digitalocean.com/', '_blank')}
+                    style={{ cursor: 'pointer' }}
                   />
                   <Image
                     src="/diffuse.png"
                     alt="Diffuse Bio Logo for Light Mode"
                     width={160}
                     height={90}
-                    style={{ marginTop: '3px' }}
+                    style={{ marginTop: '3px', cursor: 'pointer' }}
+                    onClick={() => window.open('https://diffuse.bio/', '_blank')}
                   />
                   <Image
                     src="/paperspace.svg"
                     alt="Paperspace Logo for Light Mode"
                     width={70}
                     height={80}
+                    onClick={() => window.open('https://www.paperspace.com/', '_blank')}
+                    style={{ cursor: 'pointer' }}
                   />
                 </div>
               </div>
