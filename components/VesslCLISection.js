@@ -6,32 +6,35 @@ const VesslCLISection = () => {
   // xs:bg-none dark:xs:bg-none sm:bg-[url('/cloudSVG.svg')] dark:sm:bg-[url('/cloudSVGdark.svg')]
 
   return (
-    <div
-      className="-mt-[100px] mb-12 w-full bg-slate-50 bg-top bg-no-repeat px-4 pt-[90px] dark:bg-darkThemeColor"
-      data-aos="fade-up"
-      data-aos-duration="500"
-      data-aos-delay="30"
-    >
+    <div className="w-full bg-top bg-no-repeat px-4 pb-8">
       <div className="mb-16 flex flex-col items-center text-center">
         <h2
-          className="text-lg font-semibold uppercase tracking-wide text-logomid"
+          className="text-sm font-semibold uppercase tracking-wide text-logomid xs:text-lg"
           data-aos="fade-up"
           data-aos-delay="30"
         >
-          Trainy Platform
+          Designed for Developers
         </h2>
-        <div className="md:w-[780px]">
-          <p
+        <div className="w-auto xs:w-[320px] sm:w-[480px] md:w-[600px] lg:w-[1080px]">
+          <h3
             className="mt-2 pb-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-6xl"
             data-aos="fade-up"
             data-aos-delay="60"
           >
-            Launch Jobs and Scale Up on your Infrastructure
+            Goodbye Slurm, Hello Konduktor
+          </h3>
+          <p
+            className="pb-4 text-sm font-normal tracking-tight text-gray-600 dark:text-gray-300 sm:text-xl"
+            data-aos="fade-up"
+            data-aos-delay="90"
+          >
+            Launch jobs and scale up without changing code
           </p>
         </div>
+        {/*
         <div className="md:w-[750px]">
           <p
-            className="mt-2 pb-4 text-lg tracking-tight text-gray-700 dark:text-gray-300"
+            className="mt-2 pb-4 leading-tight text-[18px] tracking-tight text-gray-600 dark:text-gray-300"
             data-aos="fade-up"
             data-aos-delay="90"
           >
@@ -41,17 +44,18 @@ const VesslCLISection = () => {
             training jobs on ANY cloud or on-prem.
           </p>
         </div>
+        */}
       </div>
       <div className="flex flex-col justify-center gap-6 sm:flex-row md:gap-16">
         <div className="hidden flex-col justify-around gap-2 sm:flex">
           <div data-aos="fade-right" data-aos-delay="30">
             <button
               onClick={() => setSelected(1)}
-              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm leading-tight text-black shadow-lg dark:bg-gray-900 dark:text-gray-100 dark:shadow-md md:w-44 md:text-[16px] ${
+              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm leading-tight text-black shadow-md dark:bg-darkThemeColor dark:text-gray-100 md:w-44 md:text-[16px] ${
                 selected === 1
-                  ? 'border-logolight shadow-logolightest dark:border-logodark2 dark:shadow-logodark2'
-                  : 'border-transparent dark:shadow-gray-800'
-              } hover:border-logolight hover:shadow-logolightest dark:hover:border-logodark2 dark:hover:shadow-logodark2`}
+                  ? 'border-logolight shadow-logolightest dark:border-logodark2 dark:shadow-none'
+                  : 'border-transparent'
+              } hover:border-logolight hover:shadow-logolightest dark:shadow-none dark:hover:border-logodark2`}
             >
               1. Select Cloud
             </button>
@@ -59,11 +63,11 @@ const VesslCLISection = () => {
           <div data-aos="fade-right" data-aos-delay="60">
             <button
               onClick={() => setSelected(2)}
-              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm leading-tight text-black shadow-lg dark:bg-gray-900 dark:text-gray-100 dark:shadow-md md:w-44 md:text-[16px] ${
+              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm leading-tight text-black shadow-md dark:bg-darkThemeColor dark:text-gray-100 md:w-44 md:text-[16px] ${
                 selected === 2
-                  ? 'border-logolight shadow-logolightest dark:border-logodark2 dark:shadow-logodark2'
-                  : 'border-transparent dark:shadow-gray-800'
-              } hover:border-logolight hover:shadow-logolightest dark:hover:border-logodark2 dark:hover:shadow-logodark2`}
+                  ? 'border-logolight shadow-logolightest dark:border-logodark2 dark:shadow-none'
+                  : 'border-transparent'
+              } hover:border-logolight hover:shadow-logolightest dark:shadow-none dark:hover:border-logodark2`}
             >
               2. Specify Instance Types
             </button>
@@ -71,11 +75,11 @@ const VesslCLISection = () => {
           <div data-aos="fade-right" data-aos-delay="90">
             <button
               onClick={() => setSelected(3)}
-              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm leading-tight text-black shadow-lg dark:bg-gray-900 dark:text-gray-100 dark:shadow-md md:w-44 md:text-[16px] ${
+              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm leading-tight text-black shadow-md dark:bg-darkThemeColor dark:text-gray-100 md:w-44 md:text-[16px] ${
                 selected === 3
-                  ? 'border-logolight shadow-logolightest dark:border-logodark2 dark:shadow-logodark2'
-                  : 'border-transparent dark:shadow-gray-800'
-              } hover:border-logolight hover:shadow-logolightest dark:hover:border-logodark2 dark:hover:shadow-logodark2`}
+                  ? 'border-logolight shadow-logolightest dark:border-logodark2 dark:shadow-none'
+                  : 'border-transparent'
+              } hover:border-logolight hover:shadow-logolightest dark:shadow-none dark:hover:border-logodark2`}
             >
               3. Add Your Code
             </button>
@@ -83,11 +87,11 @@ const VesslCLISection = () => {
           <div data-aos="fade-right" data-aos-delay="90">
             <button
               onClick={() => setSelected(4)}
-              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm leading-tight text-black shadow-lg dark:bg-gray-900 dark:text-gray-100 dark:shadow-md md:w-44 md:text-[16px] ${
+              className={`h-20 w-36 rounded-md border-2 bg-white p-4 text-sm leading-tight text-black shadow-md dark:bg-darkThemeColor dark:text-gray-100 md:w-44 md:text-[16px] ${
                 selected === 4
-                  ? 'border-logolight shadow-logolightest dark:border-logodark2 dark:shadow-logodark2'
-                  : 'border-transparent dark:shadow-gray-800'
-              } hover:border-logolight hover:shadow-logolightest dark:hover:border-logodark2 dark:hover:shadow-logodark2`}
+                  ? 'border-logolight shadow-logolightest dark:border-logodark2 dark:shadow-none'
+                  : 'border-transparent'
+              } hover:border-logolight hover:shadow-logolightest dark:shadow-none dark:hover:border-logodark2`}
             >
               4. Launch
             </button>
@@ -193,7 +197,7 @@ const VesslCLISection = () => {
             </div>
           </div>
           {selected === 1 ? (
-            <div className="flex h-fit min-h-[430px] w-96 flex-col rounded-xl bg-slate-900 p-2 text-[13px] leading-tight md:h-[540px] md:w-[520px] md:p-4 md:text-[16px]">
+            <div className="flex h-fit min-h-[500px] w-96 flex-col rounded-xl bg-slate-900 p-2 text-[13px] leading-[18px] md:h-[540px] md:w-[520px] md:p-4 md:text-[16px]">
               <div className="mb-2 flex flex-row md:mb-4">
                 <div className="m-2 h-4 w-4 rounded-full bg-[#FF605C]"></div>
                 <div className="m-2 h-4 w-4 rounded-full bg-[#FFBD44]"></div>
@@ -210,7 +214,7 @@ const VesslCLISection = () => {
             </div>
           ) : null}
           {selected === 2 ? (
-            <div className="flex h-fit min-h-[430px] w-96 flex-col rounded-xl bg-slate-900 p-2 text-[13px] leading-tight md:h-[540px] md:w-[520px] md:p-4 md:text-[16px]">
+            <div className="flex h-fit min-h-[500px] w-96 flex-col rounded-xl bg-slate-900 p-2 text-[13px] leading-[18px] md:h-[540px] md:w-[520px] md:p-4 md:text-[16px]">
               <div className="mb-2 flex flex-row md:mb-4">
                 <div className="m-2 h-4 w-4 rounded-full bg-[#FF605C]"></div>
                 <div className="m-2 h-4 w-4 rounded-full bg-[#FFBD44]"></div>
@@ -228,12 +232,18 @@ const VesslCLISection = () => {
                   </p>
                   <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">use_spot: True</p>
                   <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">cloud: kubernetes</p>
+                  <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">
+                    labels:
+                    <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">
+                      priority-class: high-priority
+                    </p>
+                  </p>
                 </p>
               </div>
             </div>
           ) : null}
           {selected === 3 ? (
-            <div className="flex h-fit min-h-[430px] w-96 flex-col rounded-xl bg-slate-900 p-2 text-[13px] leading-tight md:h-[540px] md:w-[520px] md:p-4 md:text-[16px]">
+            <div className="flex h-fit min-h-[500px] w-96 flex-col rounded-xl bg-slate-900 p-2 text-[13px] leading-[18px] md:h-[540px] md:w-[520px] md:p-4 md:text-[16px]">
               <div className="mb-2 flex flex-row md:mb-4">
                 <div className="m-2 h-4 w-4 rounded-full bg-[#FF605C]"></div>
                 <div className="m-2 h-4 w-4 rounded-full bg-[#FFBD44]"></div>
@@ -251,6 +261,12 @@ const VesslCLISection = () => {
                   </p>
                   <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">use_spot: True</p>
                   <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">cloud: kubernetes</p>
+                  <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">
+                    labels:
+                    <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">
+                      priority-class: high-priority
+                    </p>
+                  </p>
                 </p>
                 <br></br>
                 <p className="text-gray-200 dark:text-gray-300">
@@ -270,7 +286,7 @@ const VesslCLISection = () => {
             </div>
           ) : null}
           {selected === 4 ? (
-            <div className="flex h-fit min-h-[430px] w-96 flex-col rounded-xl bg-slate-900 p-2 text-[13px] leading-tight md:h-[540px] md:w-[520px] md:p-4 md:text-[16px]">
+            <div className="flex h-fit min-h-[500px] w-96 flex-col rounded-xl bg-slate-900 p-2 text-[13px] leading-[18px] md:h-[540px] md:w-[520px] md:p-4 md:text-[16px]">
               <div className="mb-2 flex flex-row md:mb-4">
                 <div className="m-2 h-4 w-4 rounded-full bg-[#FF605C]"></div>
                 <div className="m-2 h-4 w-4 rounded-full bg-[#FFBD44]"></div>
@@ -288,6 +304,12 @@ const VesslCLISection = () => {
                   </p>
                   <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">use_spot: True</p>
                   <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">cloud: kubernetes</p>
+                  <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">
+                    labels:
+                    <p className="ml-3 text-gray-200 dark:text-gray-300 md:ml-4">
+                      priority-class: high-priority
+                    </p>
+                  </p>
                 </p>
                 <br></br>
                 <p className="text-gray-200 dark:text-gray-300">

@@ -12,7 +12,7 @@ const ContentSecurityPolicy = `
   connect-src *;
   font-src 'self';
   script-src-elem 'self' 'unsafe-eval' 'unsafe-inline' *.posthog.com trainy.ai;
-  frame-src giscus.app my.heyform.net heyform.net *.heyform.net
+  frame-src giscus.app my.heyform.net heyform.net *.heyform.net *.raintank.io raintank.io *calendly.com calendly.com
 `
 
 const securityHeaders = [

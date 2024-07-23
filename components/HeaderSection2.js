@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 
-import { TypeAnimation } from 'react-type-animation'
 import Image from 'next/image'
 
 const HeaderSection = () => {
@@ -14,76 +13,79 @@ const HeaderSection = () => {
   useEffect(() => setMounted(true), [])
 
   return (
-    <div className="flex min-h-small w-full items-center justify-center bg-white py-12 dark:bg-gray-900 xs:h-screen md:py-24">
-      <div className="container mx-2 flex h-screen w-full flex-col items-center justify-center justify-items-center pb-16 pt-44 sm:py-44">
-        <div className="flex max-w-4xl flex-col items-center justify-center">
-          <h1
-            data-aos="fade-up"
-            data-aos-delay="100"
-            className="text-center text-4xl font-extrabold text-gray-900 dark:text-gray-100 xs:text-5xl md:text-6xl lg:text-7xl"
-          >
-            Managed Infrastructure
-          </h1>
-          <h1
-            data-aos="fade-up"
-            data-aos-delay="100"
-            className="text-center text-4xl font-extrabold text-gray-900 dark:text-gray-100 xs:text-5xl md:text-6xl lg:text-7xl"
-          >
-            For{' '}
-            <span className="bg-gradient-to-r from-logodark to-logolight bg-clip-text text-transparent">
-              Generative AI
-            </span>
-          </h1>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="150"
-            className="mx-4 mt-4 min-h-[56px] max-w-3xl text-center text-lg text-gray-700 dark:text-gray-300 xs:mt-10 lg:text-2xl"
-          >
-            We help teams
-            <span>
-              <TypeAnimation
-                sequence={[
-                  // Same substring at the start will only be typed out once, initially
-                  ' train',
-                  1000, // wait 1s before replacing "Mice" with "Hamsters"
-                  ' scale',
-                  1000,
-                  ' accelerate',
-                  1000,
-                ]}
-                wrapper="span"
-                speed={50}
-                className="mt-4 max-w-3xl text-center text-lg text-logomid dark:text-logomid xs:mt-10 lg:text-2xl"
-                repeat={Infinity}
-              />
-            </span>
-            AI models, effortlessly.
-          </p>
-        </div>
-        <div className="mb-[20vh] mt-6 flex flex-col items-center justify-center sm:mb-[30vh]">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="/get-started"
-            aria-label="Get Started Page"
-            data-aos="fade-up"
-            data-aos-delay="150"
-            className="inline-flex cursor-pointer items-center justify-center rounded-lg bg-black px-5 py-3 text-center text-base font-medium text-white drop-shadow-xl hover:bg-logomid dark:bg-logomid2 dark:hover:bg-logomid"
-          >
-            Book a Demo
-            <svg
-              className="-mr-1 ml-2 h-5 w-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+    <div className="relative flex min-h-small w-full items-center justify-center overflow-hidden bg-white pb-12 pt-24 dark:bg-gray-900">
+      <div className="absolute top-0  hidden h-[150vh] w-[300vh] -translate-x-[22vw] -translate-y-1/2 rotate-[110deg] transform bg-[#FFEFE6] object-cover dark:bg-[#1f1c1a] lg:block"></div>
+
+      <div className="flex w-full flex-col items-center justify-center justify-items-center px-4 pb-16">
+        <div className="flex max-w-6xl flex-row items-center justify-center">
+          <div className="mb-[19vh] items-center md:grid md:grid-cols-12 md:gap-12 lg:gap-2">
+            {/* Content */}
+            <div
+              className="mx-auto max-w-xl md:col-span-6 md:max-w-none lg:col-span-6"
+              data-aos="fade-right"
             >
-              <path
-                fillRule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </a>
+              <div className="flex flex-col items-center justify-center justify-items-center gap-6">
+                <h1
+                  data-aos="fade-up"
+                  data-aos-delay="80"
+                  className="text-left text-[40px] font-extrabold leading-10 text-gray-900 dark:text-gray-100 xs:text-5xl sm:text-6xl md:text-6xl lg:text-7xl"
+                >
+                  Modern{' '}
+                  <span className="bg-gradient-to-r from-logodark to-logolight bg-clip-text text-transparent">
+                    GPU Infrastructure
+                  </span>{' '}
+                  for AI Teams
+                </h1>
+
+                <h3
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  className="text-l text-left font-medium tracking-tight text-gray-600 dark:text-gray-100 xs:text-xl sm:text-xl md:text-xl lg:text-xl"
+                >
+                  Schedule AI workloads, manage cluster health, and understand resource allocation
+                  with Trainy's platform.
+                </h3>
+              </div>
+              <div className="my-12 flex items-center justify-start">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="/get-started"
+                  aria-label="Get Started Page"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                  className="flex cursor-pointer items-start justify-center rounded-lg bg-black px-5 py-3 text-center text-base font-medium text-white drop-shadow-xl hover:bg-logomid dark:bg-logomid2 dark:hover:bg-logomid"
+                >
+                  Book a Demo
+                  <svg
+                    className="-mr-1 ml-2 h-[24px] w-[24px]"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            {/* Image */}
+            <div
+              className="mx-auto mb-8 flex max-w-xl justify-center rounded-xl md:order-1 md:col-span-6 md:w-full md:max-w-none lg:col-span-6 lg:mb-0"
+              data-aos="fade-up"
+            >
+              <Image
+                className="mx-auto h-auto max-w-full rounded-xl dark:brightness-90"
+                src="/headerPic.png"
+                width={600}
+                height={480}
+                alt="Features 03"
+              />
+            </div>
+          </div>
         </div>
         <div className="flex-col items-center">
           {mounted && (theme === 'dark' || resolvedTheme === 'dark') ? (

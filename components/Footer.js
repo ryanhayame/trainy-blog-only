@@ -111,7 +111,7 @@ export default function Footer() {
         </div>
         <hr className="my-6 w-full border-gray-200 lg:my-8" />
         <span className="block text-sm text-gray-500 dark:text-gray-400 sm:text-center">
-          © 2023{' '}
+          © 2024{' '}
           <a href="https://trainy.ai/" className="hover:underline">
             Trainy
           </a>

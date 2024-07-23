@@ -3,11 +3,11 @@ const CloudSection = () => {
     <div className="w-full bg-slate-50 px-4 dark:bg-darkThemeColor">
       <div className="mb-8 text-center">
         <h2
-          className="text-lg font-semibold uppercase tracking-wide text-logomid"
+          className="text-sm font-semibold uppercase tracking-wide text-logomid xs:text-lg"
           data-aos="fade-up"
           data-aos-delay="30"
         >
-          Trainy Platform
+          Konduktor Platform
         </h2>
         <p
           className="mt-2 pb-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-6xl"
@@ -15,13 +15,6 @@ const CloudSection = () => {
           data-aos-delay="60"
         >
           Interested?
-        </p>
-        <p
-          className="mt-2 text-lg tracking-tight text-gray-700 dark:text-gray-300"
-          data-aos="fade-up"
-          data-aos-delay="90"
-        >
-          We'd love to learn more about what you're building and how we can help.
         </p>
         <div className="mt-12 flex flex-col items-center justify-center">
           <a
@@ -33,7 +26,7 @@ const CloudSection = () => {
             data-aos-delay="120"
             className="inline-flex cursor-pointer items-center justify-center rounded-lg bg-black px-5 py-3 text-center text-base font-medium text-white drop-shadow-xl hover:bg-logomid dark:bg-logomid2 dark:hover:bg-logomid"
           >
-            Join Waitlist
+            Book a Demo
             <svg
               className="-mr-1 ml-2 h-5 w-5"
               fill="currentColor"

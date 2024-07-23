@@ -24,7 +24,7 @@ const Nav = () => {
       <nav
         className={`sticky left-0 top-0 z-20 flex h-16 w-full justify-between bg-white px-4 py-3 drop-shadow-md dark:bg-gray-950 dark:shadow-darkMode`}
       >
-        <div className="sm: sm: flex w-5/12 justify-start pl-2 md:w-1/2 md:justify-center">
+        <div className="sm: sm: flex w-7/12 justify-start pl-2 md:w-7/12 md:justify-center">
           <Link href="/" className="flex items-center">
             <a className="flex items-center">
               <div className="mr-1 flex items-center">
@@ -64,6 +64,18 @@ const Nav = () => {
                   </Link>
                 </div>
               </li>
+              <li>
+                <div className="hidden bg-white dark:bg-gray-950 md:flex md:gap-x-6">
+                  <Link href="/get-started">
+                    <a
+                      className="inline-block cursor-pointer rounded-lg px-2 py-1 text-gray-700 hover:bg-slate-100 hover:text-slate-900 dark:text-gray-100 dark:hover:bg-darkThemeColor dark:hover:text-white"
+                      aria-label="Get Started"
+                    >
+                      Get Started
+                    </a>
+                  </Link>
+                </div>
+              </li>
               {/*
               <li>
                 <div className="hidden bg-white dark:bg-gray-950 md:flex md:gap-x-6">
@@ -87,7 +99,7 @@ const Nav = () => {
             </ul>
           </div>
         </div>
-        <div className="mr-2 flex sm:w-7/12 sm:justify-end md:order-2 md:w-1/2 md:justify-center">
+        <div className="mr-2 flex sm:w-5/12 sm:justify-end md:order-2 md:w-5/12 md:justify-center lg:mr-[2.5vw] xl:mr-[4vw] 2xl:mr-[4.5vw]">
           <ThemeSwitch />
           <Button
             target="_blank"

@@ -8,7 +8,10 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { animateScroll as scroll, scroller } from 'react-scroll'
 
+import Image from 'next/image'
+
 import HeaderSection from '@/components/HeaderSection'
+import HeaderSection2 from '@/components/HeaderSection2'
 import DemoSection from '@/components/DemoSection'
 import FeaturesZigzag from '@/components/FeaturesZigZag'
 import ListSection from '../components/ListSection'
@@ -18,6 +21,7 @@ import FAQSection from '@/components/FAQSection'
 
 import VesslCLISection from '@/components/VesslCLISection'
 import FeaturesZigzag2 from '@/components/FeaturesZigZag2'
+import ReviewsSection from '../components/ReviewsSection'
 import CloudSection from '@/components/CloudSection'
 
 export async function getStaticProps() {
@@ -66,39 +70,34 @@ export default function Home({ posts }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
 
-      <HeaderSection />
+      <HeaderSection2 />
 
-      <div
-        name="scroll-to-element1"
-        className="h-fit w-full justify-center bg-slate-50 py-32 shadow-inner dark:bg-darkThemeColor"
-      >
+      <div className="h-auto w-full justify-center overflow-x-hidden bg-slate-50 py-20 shadow-inner dark:bg-darkThemeColor">
+        <ListSection />
+      </div>
+
+      <div className="h-fit w-full justify-center overflow-x-hidden bg-white py-20 shadow-innerDark dark:bg-gray-900">
         <VesslCLISection />
       </div>
 
-      <div
-        name="scroll-to-element2"
-        className="h-auto w-full justify-center bg-white py-20 shadow-innerDark dark:bg-gray-900"
-      >
-        <FeaturesZigzag2 />
+      <div className="h-fit w-full justify-center overflow-x-hidden bg-slate-50 py-20 shadow-inner dark:bg-darkThemeColor">
+        <DemoSection />
       </div>
 
-      <div
-        name="scroll-to-element3"
-        className="h-fit w-full justify-center bg-slate-50 py-32 shadow-inner dark:bg-darkThemeColor"
-      >
+      <div className="h-fit w-full justify-center overflow-x-hidden bg-white py-20 shadow-innerDark dark:bg-gray-900">
+        <ReviewsSection />
+      </div>
+
+      <div className="h-fit w-full justify-center overflow-x-hidden bg-slate-50 py-20 shadow-inner dark:bg-darkThemeColor">
         <CloudSection />
       </div>
 
       {/*
       <div
-        name="scroll-to-element1"
-        className="h-fit w-full justify-center bg-slate-50 py-32 shadow-inner dark:bg-darkThemeColor"
+        name="scroll-to-element2"
+        className="h-auto w-full justify-center bg-white py-20 shadow-innerDark dark:bg-gray-900"
       >
-        <DemoSection />
-      </div>
-
-      <div name="scroll-to-element1" className='justify-center shadow-innerDark bg-white w-full py-20 h-auto'>
-        <ListSection />
+        <FeaturesZigzag2 />
       </div>
 
       <div
@@ -108,7 +107,7 @@ export default function Home({ posts }) {
         <FeaturesZigzag handleClick={handleClick} />
       </div>
 
-      {/*<div name="scroll-to-element1" className='justify-center shadow-innerDark bg-white w-full pt-12 h-auto'>
+      <div name="scroll-to-element1" className='justify-center shadow-innerDark bg-white w-full pt-12 h-auto'>
         <FeaturesSection />
       </div>
 
@@ -122,6 +121,7 @@ export default function Home({ posts }) {
       <div name="scroll-to-element1" className='justify-center shadow-innerDark bg-white w-full h-auto'>
         <FAQSection />
       </div>
+
       */}
     </>
   )

@@ -5,21 +5,33 @@ const DemoSection = () => {
   return (
     <div className="w-full bg-slate-50 px-4 dark:bg-darkThemeColor ">
       <div className="mb-16 text-center">
-        <h2 className="text-base font-semibold uppercase tracking-wide text-logomid">
-          Trainy profiler in action
+        <h2
+          className="text-sm font-semibold uppercase tracking-wide text-logomid xs:text-lg"
+          data-aos="fade-up"
+          data-aos-delay="30"
+        >
+          Trainy Konduktor in Action
         </h2>
-        <p className="mt-2 pb-4 text-5xl font-bold tracking-tight text-gray-900 dark:text-gray-100 lg:text-7xl">
+        <p
+          className="mt-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-6xl"
+          data-aos="fade-up"
+          data-aos-delay="60"
+        >
           Seeing is Believing
         </p>
       </div>
-      <div className="wow fadeInUp relative z-10 mx-auto max-w-[845px]" data-wow-delay=".25s">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="90"
+        className="wow fadeInUp relative z-10 mx-auto max-w-7xl"
+        data-wow-delay=".25s"
+      >
         <div className="min-w-none lg:min-w-3/4">
-          <Image
-            loading="lazy"
-            src={DemoGif}
-            alt="Trainy Demo Gif"
-            height={475}
-            width={845}
+          <iframe
+            src="https://snapshots.raintank.io/dashboard/snapshot/qJUzCCb4nLspDAJfGKd4EexUKJEmvEvu?orgId=0&from=1720770699077&to=1720774299077"
+            title="Konduktor Demo"
+            height={675}
+            width={1440}
             className="min-w-none lg:min-w-3/4 mx-auto max-w-full rounded-xl bg-slate-50 dark:bg-darkThemeColor dark:brightness-90"
           />
         </div>
