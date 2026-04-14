@@ -4,15 +4,13 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
-  default-src 'self' *.posthog.com trainy.ai;
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app *.heyform.net *.posthog.com trainy.ai;
+  default-src 'self';
+  script-src 'self' 'unsafe-eval' 'unsafe-inline';
   style-src 'self' 'unsafe-inline';
   img-src * blob: data:;
   media-src 'none';
   connect-src *;
   font-src 'self';
-  script-src-elem 'self' 'unsafe-eval' 'unsafe-inline' *.posthog.com trainy.ai;
-  frame-src giscus.app my.heyform.net heyform.net *.heyform.net *.raintank.io raintank.io *calendly.com calendly.com
 `
 
 const securityHeaders = [
@@ -66,13 +64,5 @@ module.exports = withBundleAnalyzer({
         headers: securityHeaders,
       },
     ]
-  },
-  swcMinify: false,
-  webpack: (config) => {
-    config.resolve.fallback = {
-      ...config.resolve.fallback,
-      process: require.resolve('process/browser'),
-    }
-    return config
   },
 })
