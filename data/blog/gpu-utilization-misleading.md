@@ -1,6 +1,6 @@
 ---
 title: 'GPU Utilization is a Misleading Metric'
-date: '2024-08-22'
+date: '2025-02-24'
 draft: false
 summary: Most ML teams use GPU Utilization as their main performance metric, but we found this can be quite misleading.
 tags: [Cluster-Management, Logging, Cluster, GPUs]
