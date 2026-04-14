@@ -1,14 +1,14 @@
 ---
-title: 'GPU Fabric Preflight Checks for MultiNode Training'
-date: '2024-06-07'
+title: 'Preflight Checks for GPU Fabric before Multinode Training'
+date: '2025-03-18'
 draft: false
-summary: Run these benchmarks before training on multiple machines.
+summary: Having a performant GPU network fabric is one of the most important factors for your training speed.
 tags: [Training]
-canonicalUrl: preflight
+canonicalUrl: gpu-fabric-checks
 authors: ['grace']
 ---
 
-Given the scale of modern LLMs, GPU network fabric is one of the most important factor for your training speed. The ability to efficiently communicate across hundreds of nodes allows you to maximize GPU utilization and explore more complex training parallelisms such as in [Deepspeed](https://www.deepspeed.ai/) or [Fully Sharded Data Parallel](https://pytorch.org/docs/stable/fsdp.html). These critically rely on high performance networking solutions requiring specialized hardware and software like Infiniband or RDMA over Converged Ethernet (RoCE) with current vendor options often going up to now 3200 Gbps.
+Given the scale of modern LLMs, having a performant GPU network fabric is one of the most important factor for your training speed. The ability to efficiently communicate across hundreds of nodes allows you to maximize GPU utilization and explore more complex training parallelisms such as in [Deepspeed](https://www.deepspeed.ai/) or [Fully Sharded Data Parallel](https://pytorch.org/docs/stable/fsdp.html). These critically rely on high performance networking solutions requiring specialized hardware and software like Infiniband or RDMA over Converged Ethernet (RoCE) with current vendor options often going up to now 3200 Gbps.
 
 # Estimating Step Time for GPT language models
 
@@ -93,4 +93,4 @@ Here we see that our throughput is not scaling ideally linearly, which is indica
 
 The dream of any ML engineer is linear scaling. 2x the GPUs should mean half the training time. However, the only way to practically achieve this is with networking capabilities that can communicate gradients as faster than your GPU can compute them.
 
-Is your team or organization struggling with distributed training? I’d love to chat and see if Trainy can help! Send me a message on Linkedin or reach out at founders@trainy.ai
+Is your team or organization struggling with distributed training? I’d love to chat and see if Trainy can help! Reach out at founders@trainy.ai.

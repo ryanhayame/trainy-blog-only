@@ -1,8 +1,8 @@
 ---
 title: 'What Neptune Got Right (And How to Keep It)'
-date: '2026-02-18'
+date: '2026-02-19'
 draft: false
-summary: What made Neptune good as an experiment tracker, and how Pluto preserves those qualities while adding improvements.
+summary: Neptune is shutting down in March. Here's what it got right, where we think it could go further, and how we built Pluto to pick up where it left off.
 tags: [MLOps, Experiment-Tracking]
 canonicalUrl: what-neptune-got-right-and-how-to-keep-it
 authors: ['default']
@@ -63,6 +63,8 @@ Under the hood:
 - Ingestion server handles 2000+ req/s end-to-end per replica. P95 latency: 200ms at 2k req/s.
 - React frontend for a responsive UX. We added lazy loading optimizations to increase the responsiveness of the UI even when multiple runs and charts are being loaded on a single page.
 - Whole stack is self-hostable via docker-compose in about a minute. While we host this stack with multiple replicas for high availability, it's still very fast on a single machine with around 8 CPUs, 32GB RAM, and 1TB disk.
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/fjpRP0KLCug" title="Pluto Demo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 #### Neptune compatibility layer
 
